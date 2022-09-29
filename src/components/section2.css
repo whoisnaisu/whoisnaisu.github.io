@@ -1,0 +1,113 @@
+.App-center {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: fit-content;
+  margin-top: 4em;
+}
+
+.EducationArea {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  height: fit-content;
+  margin-bottom: 6em;
+}
+
+.WorkArea {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-bottom: 5%;
+}
+
+.WorkBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+  border-radius: 100%;
+  width: 31em;
+  height: 31em;
+  padding: 3em;
+  text-align: center;
+  background-color: white;
+}
+
+.WorkBox:hover {
+  scale: 120%;
+}
+
+.EducationBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: solid 1px;
+  border-radius: 100%;
+  width: 31em;
+  height: 31em;
+  padding: 3em;
+  text-align: center;
+  background-color: white;
+}
+
+.EducationBox:hover {
+  scale: 120%;
+}
+
+.CircleTitle {
+  font-family: "DM Serif Display", serif;
+  font-size: 4em;
+  display: flex;
+  justify-content: center;
+  margin: 50px;
+}
+
+.BoxCircleTitle {
+  font-family: "DM Serif Display", serif;
+  font-size: 1.8em;
+}
+
+@media only screen and (max-width: 374px) {
+  .App-center {
+    height: 100%;
+    margin-top: 6%;
+  }
+  .EducationArea {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .WorkArea {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .CircleTitle {
+    font-size: 30px;
+  }
+
+  .WorkBox {
+    width: 20em;
+    height: 20em;
+    padding: 10px;
+  }
+
+  .EducationBox {
+    width: 20em;
+    height: 20em;
+    padding: 10px;
+  }
+
+  .BoxCircleTitle {
+    font-size: 15px;
+    width: 50%;
+  }
+
+  .BoxCircleP {
+    width: 90%;
+    font-size: 13px;
+  }
+}

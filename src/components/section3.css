@@ -1,0 +1,79 @@
+.App-footer {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.Title {
+  font-family: "DM Serif Display", serif;
+  font-size: 4em;
+  display: flex;
+  justify-content: center;
+  margin: 2.5em 0px 1em 0px;
+}
+.SkillSection {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.SkillTitle {
+  font-size: 1.3em;
+  padding-top: 0.5em;
+}
+
+.SkillBox {
+  border: solid 1px;
+  background: white;
+  height: 19em;
+  width: 15em;
+  border-radius: 160px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 4%;
+  margin-bottom: 5%;
+  font-size: 1.3em;
+}
+
+.SummarySection {
+  background: linear-gradient(
+    0deg,
+    rgba(228, 204, 215, 1) 0%,
+    rgba(236, 240, 245, 0) 100%
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+}
+
+.SummaryContext {
+  width: 60%;
+  height: 100%;
+  margin-bottom: 8%;
+}
+
+@media only screen and (max-width: 374px) {
+  .SkillSection {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .SkillBox {
+    height: 13em;
+    width: 10em;
+    padding-top: 2em;
+  }
+
+  .SkillTitle {
+    font-size: 0.9em;
+  }
+
+  li {
+    font-size: 0.7em;
+  }
+}
