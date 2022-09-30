@@ -57,23 +57,23 @@
   margin-bottom: 8%;
 }
 
-@media only screen and (max-width: 390px) {
+@media only screen and (max-width: 828px) {
   .SkillSection {
     flex-direction: column;
     align-items: center;
   }
 
   .SkillBox {
-    height: 13em;
-    width: 10em;
-    padding-top: 2em;
+    height: 20em;
+    width: 15em;
+    padding-top: 3em;
   }
 
   .SkillTitle {
-    font-size: 0.9em;
+    font-size: 1.5em;
   }
 
   li {
-    font-size: 0.7em;
+    font-size: 1.2em;
   }
 }

@@ -70,7 +70,7 @@
   font-size: 1.8em;
 }
 
-@media only screen and (max-width: 390px) {
+@media only screen and (max-width: 828px) {
   .App-center {
     height: 100%;
     margin-top: 6%;
@@ -86,28 +86,28 @@
   }
 
   .CircleTitle {
-    font-size: 30px;
-  }
-
-  .WorkBox {
-    width: 20em;
-    height: 20em;
-    padding: 10px;
+    font-size: 4em;
   }
 
   .EducationBox {
-    width: 20em;
-    height: 20em;
-    padding: 10px;
+    width: 35em;
+    height: 35em;
+    padding: 1px;
+  }
+
+  .WorkBox {
+    width: 35em;
+    height: 35em;
+    padding: 1px;
   }
 
   .BoxCircleTitle {
-    font-size: 15px;
-    width: 50%;
+    font-size: 2em;
+    width: 90%;
   }
 
   .BoxCircleP {
     width: 90%;
-    font-size: 13px;
+    font-size: 1.2em;
   }
 }
