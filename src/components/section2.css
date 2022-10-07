@@ -11,7 +11,7 @@
   flex-direction: row;
   justify-content: space-evenly;
   height: fit-content;
-  margin-bottom: 6em;
+  margin-bottom: 6rem;
 }
 
 .WorkArea {
@@ -28,9 +28,9 @@
   align-items: center;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
   border-radius: 100%;
-  width: 31em;
-  height: 31em;
-  padding: 3em;
+  width: 31rem;
+  height: 31rem;
+  padding: 3rem;
   text-align: center;
   background-color: white;
 }
@@ -46,9 +46,9 @@
   align-items: center;
   border: solid 1px;
   border-radius: 100%;
-  width: 31em;
-  height: 31em;
-  padding: 3em;
+  width: 31rem;
+  height: 31rem;
+  padding: 3rem;
   text-align: center;
   background-color: white;
 }

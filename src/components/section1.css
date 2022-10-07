@@ -8,12 +8,12 @@
 
 .Nav-bar {
   border: solid 1px;
-  border-radius: 10em;
+  border-radius: 10rem;
   border-style: double;
   justify-content: space-between;
   display: flex;
   align-items: center;
-  margin: 2em;
+  margin: 2rem;
   background-color: rgb(255, 255, 255);
 }
 
@@ -25,7 +25,7 @@
 .Nav-button {
   background-color: white;
   border: none;
-  padding: 1em;
+  padding: 1.5rem;
   font-family: "Philosopher", sans-serif;
   font-size: 1.2em;
   font-weight: 600;
@@ -33,25 +33,25 @@
 
 .Nav-button:hover {
   color: rgb(205, 157, 165);
-  font-size: 1.3em;
+  font-size: 1.3rem;
 }
 
 .Boxleft {
   font-family: "DM Serif Display";
-  font-size: 2em;
-  margin-left: 1em;
+  font-size: 2rem;
+  margin-left: 1rem;
 }
 
 .Boxright {
   padding: 10px;
-  margin-right: 1em;
+  margin-right: 1rem;
   font-weight: 800;
-  font-size: 22px;
+  font-size: 1.5rem;
 }
 
 .Title-div {
   width: 100%;
-  height: 40em;
+  height: 40rem;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -87,50 +87,50 @@
   height: 26em;
   background-color: rgb(255, 255, 255);
   border: solid 1px;
-  border-radius: 10em;
-  padding-bottom: 1em;
+  border-radius: 10rem;
+  padding-bottom: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-left: 12em;
+  margin-left: 12rem;
 }
 
 .WhiteBoxText {
   font-family: "DM Serif Display", serif;
   font-size: 1.6em;
-  padding-top: 0.5em;
+  padding-top: 0.5rem;
   text-align: center;
   width: 70%;
-  margin-bottom: 0.5em;
+  margin-bottom: 0.5rem;
 }
 
 .WhiteboxP {
   background-color: #efdce7;
-  border-radius: 10em;
-  margin-top: 1em;
-  padding: 1em;
+  border-radius: 10rem;
+  margin-top: 1rem;
+  padding: 1rem;
   font-family: "Raleway", sans-serif;
-  font-size: 0.8em;
+  font-size: 0.8rem;
   font-weight: 800;
 }
 
 .IconBar {
   justify-content: space-evenly;
-  margin-top: 2.5em;
+  margin-top: 2.5rem;
   display: flex;
 }
 
 .IconLogo {
   display: flex;
-
   align-items: center;
   justify-content: center;
   background-color: rgb(255, 255, 255);
   border: solid 1px;
-  border-radius: 10em;
-  height: 4em;
-  width: 4em;
+  border-radius: 10rem;
+  height: 4rem;
+  width: 4rem;
+  padding: 2.5rem;
 }
 
 .IconLogo:hover {
@@ -163,13 +163,13 @@
   }
 
   .GreetingMessage {
-    margin-top: 2em;
-    font-size: 2em;
+    margin-top: 2rem;
+    font-size: 2rem;
   }
 
   .IntroductionP {
-    font-size: 1.5em;
-    padding: 2em;
+    font-size: 1.5rem;
+    padding: 2rem;
   }
 
   .RightTitle {
@@ -177,15 +177,15 @@
     width: 90%;
     margin-right: 0;
     margin-bottom: 10%;
-    font-size: 1.3em;
+    font-size: 1.3rem;
   }
 
   .Boxright {
-    font-size: 1em;
+    font-size: 1rem;
   }
 
   .Boxleft {
-    font-size: 1.5em;
+    font-size: 1.5rem;
   }
 
   .IconLogo {
