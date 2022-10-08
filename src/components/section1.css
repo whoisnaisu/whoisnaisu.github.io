@@ -33,7 +33,7 @@
 
 .Nav-button:hover {
   color: rgb(205, 157, 165);
-  font-size: 1.3rem;
+  transition: 0.6s;
 }
 
 .Boxleft {
@@ -74,6 +74,7 @@
 
 .Yudelle:hover {
   scale: 160%;
+  transition: 0.6s;
 }
 
 .RightTitle {
@@ -135,6 +136,7 @@
 
 .IconLogo:hover {
   scale: 110%;
+  transition: 0.6s;
 }
 
 @media only screen and (max-width: 828px) {

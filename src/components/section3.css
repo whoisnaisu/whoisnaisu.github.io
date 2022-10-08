@@ -7,10 +7,10 @@
 }
 .Title {
   font-family: "DM Serif Display", serif;
-  font-size: 4em;
+  font-size: 3rem;
   display: flex;
   justify-content: center;
-  margin: 2.5em 0px 1em 0px;
+  margin: 8rem 0px 1em 0px;
 }
 .SkillSection {
   width: 100%;
@@ -20,8 +20,8 @@
 }
 
 .SkillTitle {
-  font-size: 1.3em;
-  padding-top: 0.5em;
+  font-size: 1.3rem;
+  padding-top: 0.5rem;
 }
 
 .SkillBox {
@@ -35,7 +35,7 @@
   align-items: center;
   padding-top: 4%;
   margin-bottom: 5%;
-  font-size: 1.3em;
+  font-size: 1.3rem;
 }
 
 .SummarySection {
@@ -64,16 +64,16 @@
   }
 
   .SkillBox {
-    height: 20em;
-    width: 15em;
-    padding-top: 3em;
+    height: 20rem;
+    width: 15rem;
+    padding-top: 3rem;
   }
 
   .SkillTitle {
-    font-size: 1.5em;
+    font-size: 1.5rem;
   }
 
   li {
-    font-size: 1.2em;
+    font-size: 1.2rem;
   }
 }

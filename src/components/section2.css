@@ -36,7 +36,8 @@
 }
 
 .WorkBox:hover {
-  scale: 120%;
+  scale: 110%;
+  transition: 0.6s;
 }
 
 .EducationBox {
@@ -54,12 +55,13 @@
 }
 
 .EducationBox:hover {
-  scale: 120%;
+  scale: 110%;
+  transition: 0.6s;
 }
 
 .CircleTitle {
   font-family: "DM Serif Display", serif;
-  font-size: 4em;
+  font-size: 3em;
   display: flex;
   justify-content: center;
   margin: 50px;
@@ -67,7 +69,7 @@
 
 .BoxCircleTitle {
   font-family: "DM Serif Display", serif;
-  font-size: 1.8em;
+  font-size: 1.8rem;
 }
 
 @media only screen and (max-width: 828px) {
@@ -86,28 +88,28 @@
   }
 
   .CircleTitle {
-    font-size: 4em;
+    font-size: 2rem;
   }
 
   .EducationBox {
-    width: 35em;
-    height: 35em;
+    width: 25rem;
+    height: 25rem;
     padding: 1px;
   }
 
   .WorkBox {
-    width: 35em;
-    height: 35em;
+    width: 25rem;
+    height: 25rem;
     padding: 1px;
   }
 
   .BoxCircleTitle {
-    font-size: 2em;
-    width: 90%;
+    font-size: 1.2rem;
+    width: 80%;
   }
 
   .BoxCircleP {
-    width: 90%;
-    font-size: 1.2em;
+    width: 80%;
+    font-size: 1rem;
   }
 }
