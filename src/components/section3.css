@@ -25,17 +25,21 @@
 }
 
 .SkillBox {
-  border: solid 1px;
-  background: white;
-  height: 19em;
-  width: 15em;
-  border-radius: 160px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 4%;
-  margin-bottom: 5%;
-  font-size: 1.3rem;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 1rem;
+}
+
+.SkillBox {
+  flex-wrap: wrap;
+}
+
+.SkillIcon {
+  display: flex;
+  flex-direction: row;
+  padding: 5rem;
+  width: 20rem;
 }
 
 .SummarySection {
@@ -63,17 +67,13 @@
     align-items: center;
   }
 
-  .SkillBox {
-    height: 20rem;
-    width: 15rem;
-    padding-top: 3rem;
-  }
-
   .SkillTitle {
     font-size: 1.5rem;
   }
 
-  li {
-    font-size: 1.2rem;
+  .SkillBox {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
   }
 }

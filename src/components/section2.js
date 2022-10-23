@@ -34,7 +34,7 @@ function DetailSection() {
         </div>
         <div className="EducationBox">
           <h2 className="BoxCircleTitle">
-            TechUp Bootcamp Expected to graduate in 2023
+            TechUp Bootcamp Expected to graduate in 2022
           </h2>
           <br />
           <p className="BoxCircleP">
@@ -49,7 +49,7 @@ function DetailSection() {
       </div>
 
       <div className="CircleTitle" id="WorkInfo">
-        WORK EXPERIENCE
+        WORK EXPERIENCES
       </div>
       <div className="WorkArea">
         <div className="WorkBox">

@@ -7,7 +7,6 @@ import phone from "../resume-pic/phone.jpg";
 function HeaderSection() {
   return (
     <header className="App-header">
-      {/* <img src={phone} className="App-logo" alt="logo" /> */}
       <nav className="Nav-bar">
         <div className="Boxleft">NAISU</div>
         <div className="Nav-item">
@@ -15,10 +14,10 @@ function HeaderSection() {
             EDUCATION
           </a>
           <a href="#WorkInfo" className="Nav-button">
-            WORK EXPERIENCE
+            WORK EXPERIENCES
           </a>
           <a href="#SkillInfo" className="Nav-button">
-            SKILL
+            SKILLS
           </a>
         </div>
         <div className="Boxright">Resume</div>
@@ -27,8 +26,8 @@ function HeaderSection() {
         <img className="Yudelle" src={people}></img>
         <div className="TitleWhiteBox">
           <h1 className="WhiteBoxText">
-            It's okay to start again from ZERO. <br />
-            Even the Array index starts from ZERO.
+            " It's okay to start again from ZERO, <br />
+            even the Array Index starts from ZERO "
           </h1>
           <p className="WhiteboxP">TRAINEE SOFTWARE DEVELOPER</p>
         </div>
@@ -40,13 +39,13 @@ function HeaderSection() {
           </h1>
           <br />
           <p className="IntroductionP">
-            I'm enrolled in{" "}
+            Currently, I'm enrolled in{" "}
             <a href="https://www.techupth.com/">
               <strong>Tech Up</strong>
             </a>
-            's full-stack developer bootcamp to learn how to code. For me, this
-            is a fresh beginning. and I anticipate turning into a passionate
-            developer in the future. I hope you'll find my journey interesting!
+            's full-stack developer bootcamp learning how to code. I'm
+            enthusiast working into a passionate developer in the near future!
+            Hope you having fun along with my lifelong journey!
           </p>
           <br />
           <div className="IconBar">
@@ -55,7 +54,7 @@ function HeaderSection() {
                 <img src={github} width="50px" />
               </div>
             </a>
-            <a href="mailto:napas14204@gmail.com">
+            <a href="mailto: napas14204@gmail.com">
               <div className="IconLogo">
                 <img src={gmail} width="50px" />
               </div>
