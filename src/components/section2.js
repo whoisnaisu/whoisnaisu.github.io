@@ -82,7 +82,9 @@ function DetailSection() {
             </ul>
           </p>
         </div>
+
       </div>
+
       <hr className="close-line" />
     </div>
   );

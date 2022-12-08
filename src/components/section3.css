@@ -10,7 +10,7 @@
   font-size: 3rem;
   display: flex;
   justify-content: center;
-  margin: 8rem 0px 1em 0px;
+  margin: 10rem 0px 1em 0px;
 }
 .stacks-section {
   width: 100%;
@@ -32,6 +32,7 @@
   flex-direction: row;
   margin: 2rem;
   width: 6rem;
+  animation: shake 8s ease-out 0s infinite alternate-reverse both;
 }
 
 .summary-section {
@@ -63,5 +64,37 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: rotate(0deg);
+    transform-origin: 50% 100%;
+  }
+
+  10% {
+    transform: rotate(2deg);
+  }
+
+  20%,
+  40%,
+  60% {
+    transform: rotate(-4deg);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: rotate(4deg);
+  }
+
+  80% {
+    transform: rotate(-2deg);
+  }
+
+  90% {
+    transform: rotate(2deg);
   }
 }

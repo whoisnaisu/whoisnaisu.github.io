@@ -19,16 +19,29 @@
   flex-direction: row;
 }
 
-.nav-button {
-  background-color: white;
+.project-button,
+.work-button,
+.stack-button {
   border: none;
   padding: 1.5rem;
   font-family: "Philosopher", sans-serif;
-  font-size: 1.2em;
+  font-size: 1.3rem;
   font-weight: 600;
 }
 
-.nav-button:hover {
+.project-button {
+  animation: drop 2s ease-out 0s 1 normal backwards;
+}
+.work-button {
+  animation: drop 2s ease-out 0.1s 1 normal backwards;
+}
+
+.stack-button {
+  animation: drop 2s ease-out 0.2s 1 normal backwards;
+}
+
+.project-button:hover,
+.work-button:hover {
   color: rgb(205, 157, 165);
   transition: 0.6s;
 }
@@ -56,24 +69,6 @@
   position: relative;
 }
 
-.greetings {
-  font-family: "Philosopher", sans-serif;
-  font-weight: 800;
-  font-size: 2.1em;
-}
-
-.Yudelle {
-  position: absolute;
-  width: 300px;
-  left: 0px;
-  bottom: 0px;
-}
-
-.Yudelle:hover {
-  scale: 160%;
-  transition: 0.6s;
-}
-
 .capsule-box {
   width: 18.5em;
   height: 26em;
@@ -85,7 +80,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-left: 12rem;
+  margin-left: 5rem;
+}
+
+.capsule-box:hover {
+  scale: 105%;
+  transition: 0.6s;
 }
 
 .capsule-quote {
@@ -107,6 +107,12 @@
   font-weight: 800;
 }
 
+.greetings {
+  font-family: "Philosopher", sans-serif;
+  font-weight: 800;
+  font-size: 2.1em;
+}
+
 .main-right-side {
   width: 37%;
   margin-right: 7em;
@@ -119,7 +125,9 @@
   display: flex;
 }
 
-.logo-icon {
+.github-icon,
+.gmail-icon,
+.phone-icon {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -131,16 +139,26 @@
   padding: 2.5rem;
 }
 
-.logo-icon:hover {
+.github-icon {
+  animation: jello 2s ease-out 3s 1 normal backwards;
+}
+
+.gmail-icon {
+  animation: jello 2s ease-out 3.5s 1 normal backwards;
+}
+
+.phone-icon {
+  animation: jello 2s ease-out 4s 1 normal backwards;
+}
+
+.github-icon:hover,
+.gmail-icon:hover,
+.phone-icon:hover {
   scale: 110%;
   transition: 0.6s;
 }
 
 @media only screen and (max-width: 828px) {
-  .Yudelle {
-    display: none;
-  }
-
   .capsule-box {
     display: none;
   }
@@ -189,5 +207,81 @@
 
   .logo-icon {
     scale: 100%;
+  }
+}
+
+@keyframes jello {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+
+  30% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+
+  40% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+
+  50% {
+    transform: scale3d(1.15, 0.85, 1);
+  }
+
+  65% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+
+  75% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes drop {
+  0% {
+    animation-timing-function: ease-in;
+    opacity: 1;
+    transform: translateY(-45px);
+  }
+
+  24% {
+    opacity: 1;
+  }
+
+  40% {
+    animation-timing-function: ease-in;
+    transform: translateY(-24px);
+  }
+
+  65% {
+    animation-timing-function: ease-in;
+    transform: translateY(-12px);
+  }
+
+  82% {
+    animation-timing-function: ease-in;
+    transform: translateY(-6px);
+  }
+
+  93% {
+    animation-timing-function: ease-in;
+    transform: translateY(-4px);
+  }
+
+  25%,
+  55%,
+  75%,
+  87% {
+    animation-timing-function: ease-out;
+    transform: translateY(0px);
+  }
+
+  100% {
+    animation-timing-function: ease-out;
+    opacity: 1;
+    transform: translateY(0px);
   }
 }
