@@ -6,68 +6,67 @@ import phone from "../resume-pic/phone.jpg";
 
 function HeaderSection() {
   return (
-    <header className="App-header">
-      <nav className="Nav-bar">
-        <div className="Boxleft">NAISU</div>
-        <div className="Nav-item">
-          <a href="#EducationInfo" className="Nav-button">
-            EDUCATION
+    <header className="container-1">
+      <nav className="nav-bar">
+        <div className="left-side-nav">NAISU</div>
+        <div className="nav-item">
+          <a href="#project-info" className="nav-button">
+            PROJECTS
           </a>
-          <a href="#WorkInfo" className="Nav-button">
-            WORK EXPERIENCES
+          <a href="#work-info" className="nav-button">
+            WORK EXPERIENCE
           </a>
-          <a href="#SkillInfo" className="Nav-button">
-            SKILLS
+          <a href="#stack-info" className="nav-button">
+            STACKS
           </a>
         </div>
-        <div className="Boxright">Resume</div>
+        <div className="right-side-nav">Resume</div>
       </nav>
-      <div className="Title-div">
-        <img className="Yudelle" src={people}></img>
-        <div className="TitleWhiteBox">
-          <h1 className="WhiteBoxText">
+      <div className="main">
+        <img className="Yudelle" src={people} alt="people"></img>
+        <div className="capsule-box">
+          <h1 className="capsule-quote">
             " It's okay to start again from ZERO, <br />
-            even the Array Index starts from ZERO "
+            array index starts from ZERO, too."
           </h1>
-          <p className="WhiteboxP">TRAINEE SOFTWARE DEVELOPER</p>
+          <p className="capsule-tag">ENTRY-LEVEL SOFTWARE DEVELOPER</p>
         </div>
-        <div className="RightTitle">
-          <h1 className="GreetingMessage">
+        <div className="main-right-side">
+          <h1 className="greetings">
             Greetings !
             <br />
             I'm Napas Kumpunya (Naisu)
           </h1>
           <br />
-          <p className="IntroductionP">
-            Currently, I'm enrolled in{" "}
+          <p className="introduction">
+            I graduated from full-stack developer bootcamp at{" "}
             <a href="https://www.techupth.com/">
               <strong>Tech Up</strong>
             </a>
-            's full-stack developer bootcamp learning how to code. I'm
-            enthusiast working into a passionate developer in the near future!
-            Hope you having fun along with my lifelong journey!
+            . I'm looking for an opportunity to work as a developer in the near future!
+            Hope you having fun along with my new lifelong journey!
           </p>
           <br />
-          <div className="IconBar">
+          <div className="icon-group">
             <a href="https://github.com/whoisnaisu">
-              <div className="IconLogo">
-                <img src={github} width="50px" />
+              <div className="logo-icon">
+                <img src={github} width="50rem" alt="git hub icon" />
               </div>
             </a>
             <a href="mailto: napas14204@gmail.com">
-              <div className="IconLogo">
-                <img src={gmail} width="50px" />
+              <div className="logo-icon">
+                <img src={gmail} width="50rem" alt="mail icon" />
               </div>
             </a>
             <a href="tel:+0804467024">
-              <div className="IconLogo">
-                <img src={phone} width="50px" />
+              <div className="logo-icon">
+                <img src={phone} width="50rem" alt="phon icon" />
               </div>
             </a>
           </div>
         </div>
       </div>
-      <hr className="CloseLine" />
+      <hr className="close-line" />
     </header>
   );
 }

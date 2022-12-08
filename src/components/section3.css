@@ -1,48 +1,40 @@
-.App-footer {
+.container-3 {
   width: 100%;
   height: fit-content;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.Title {
+.title {
   font-family: "DM Serif Display", serif;
   font-size: 3rem;
   display: flex;
   justify-content: center;
   margin: 8rem 0px 1em 0px;
 }
-.SkillSection {
+.stacks-section {
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
 }
 
-.SkillTitle {
-  font-size: 1.3rem;
-  padding-top: 0.5rem;
-}
-
-.SkillBox {
+.stack-box {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   padding: 1rem;
-}
-
-.SkillBox {
   flex-wrap: wrap;
 }
 
-.SkillIcon {
+.icon {
   display: flex;
   flex-direction: row;
-  padding: 5rem;
-  width: 20rem;
+  margin: 2rem;
+  width: 6rem;
 }
 
-.SummarySection {
+.summary-section {
   background: linear-gradient(
     0deg,
     rgba(228, 204, 215, 1) 0%,
@@ -55,23 +47,19 @@
   padding: 1em;
 }
 
-.SummaryContext {
+.summary-context {
   width: 60%;
   height: 100%;
   margin-bottom: 8%;
 }
 
 @media only screen and (max-width: 828px) {
-  .SkillSection {
+  .stacks-section {
     flex-direction: column;
     align-items: center;
   }
 
-  .SkillTitle {
-    font-size: 1.5rem;
-  }
-
-  .SkillBox {
+  .stack-box {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
