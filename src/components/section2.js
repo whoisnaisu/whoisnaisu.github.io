@@ -1,96 +1,91 @@
 import "./section2.css";
 
+
 function DetailSection() {
+
+  const openLink = (link) => {
+    window.open(link)
+  }
+
   return (
-    <div className="App-center">
-      <div className="CircleTitle" id="EducationInfo">
-        EDUCATION
+    <div className="container-2">
+      <div className="title" id="project-info">
+        PROJECTS
       </div>
-      <div className="EducationArea">
-        <div className="EducationBox">
-          <h2 className="BoxCircleTitle">
-            Joseph Upatham School Graduated in 2016
+      <p className="description">You can click on the project title to see a repository.</p>
+      <div className="projects-area">
+        <div className="project-box">
+          <h2 className="circle-title" onClick={() => { openLink("https://github.com/whoisnaisu/find-a-book") }}>
+            Find a Book
           </h2>
           <br />
-          <p className="BoxCircleP">
-            Nisi reprehenderit nulla eu officia laboris dolor. Mollit ullamco
-            laboris dolor magna commodo quis laboris sint dolore. Labore
-            excepteur ad velit ullamco occaecat deserunt. Mollit anim ut eu
-            Lorem in irure id incididunt aliqua amet commodo dolore eiusmod.
+          <p className="circle-description">
+            Simple book search engine with google API using <strong>React</strong>.
           </p>
         </div>
-        <div className="EducationBox">
-          <h2 className="BoxCircleTitle">
-            Assumption Commercial College Graduated in 2019
+        <div className="project-box">
+          <h2 className="circle-title" onClick={() => { openLink("https://github.com/techupth/home-service") }}>
+            Home Service
           </h2>
           <br />
-          <p className="BoxCircleP">
-            Dolor aliqua est dolor sit Lorem esse cillum deserunt elit ipsum non
-            id ex sunt. Sunt ad et reprehenderit et non quis excepteur dolor.
-            Quis aliquip nulla amet consequat laboris consequat consequat
-            ullamco Lorem elit non. Commodo ipsum dolor qui veniam id magna ea
-            pariatur eu in.
+          <p className="circle-description">
+            Collaborating on a group project with the <strong>Agile Scrum method</strong>, mainly
+            responsible for front-end development using <strong>React</strong> and Chakra UI.
           </p>
         </div>
-        <div className="EducationBox">
-          <h2 className="BoxCircleTitle">
-            TechUp Bootcamp Expected to graduate in 2022
+        {/* <div className="project-box">
+          <h2 className="circle-title">
+            Pacman Game
           </h2>
           <br />
-          <p className="BoxCircleP">
+          <p className="circle-description">
             Nostrud eiusmod aliqua ea aliquip pariatur id esse. Cillum aliqua
             commodo et enim. Ut elit irure ad ex exercitation nulla proident
-            Lorem ea Lorem consectetur irure est adipisicing. Ipsum sint nulla
-            laboris aliquip non voluptate aliqua irure laborum. Laboris aliquip
-            proident occaecat quis dolor nulla reprehenderit minim dolor laborum
-            occaecat nulla sint exercitation.
+            Lorem ea Lorem consectetur irure est adipisicing.
           </p>
-        </div>
+        </div> */}
       </div>
 
-      <div className="CircleTitle" id="WorkInfo">
-        WORK EXPERIENCES
+      <div className="title" id="work-info">
+        WORK EXPERIENCE
       </div>
-      <div className="WorkArea">
-        <div className="WorkBox">
-          <h2 className="BoxCircleTitle">Internship at Reed Tradex in 2018</h2>
+      <p className="description">Previous work experience && my responsible for the roles.</p>
+      <div className="work-area">
+        <div className="work-box">
+          <h2 className="circle-title">Call Center (Internship), 2018</h2>
           <br />
-          <p className="BoxCircleP">
-            Nostrud eiusmod aliqua ea aliquip pariatur id esse. Cillum aliqua
-            commodo et enim. Ut elit irure ad ex exercitation nulla proident
-            Lorem ea Lorem consectetur irure est adipisicing. Ipsum sint nulla
-            laboris aliquip non voluptate aliqua irure laborum. Laboris aliquip
-            proident occaecat quis dolor nulla reprehenderit minim dolor laborum
-            occaecat nulla sint exercitation.
+          <p className="circle-description">
+            <ul>
+              <li>Informed the details to the person interested in attending the exhibition.</li>
+              <li>Persuaded and followed up for confirmation from the attendees.</li>
+              <li>Updated attendees' information to the database.</li>
+            </ul>
           </p>
         </div>
-        <div className="WorkBox">
-          <h2 className="BoxCircleTitle">Graphic Designer 2019-2020</h2>
+        <div className="work-box">
+          <h2 className="circle-title">Graphic Designer, 2019-2020</h2>
           <br />
-          <p className="BoxCircleP">
-            Nostrud eiusmod aliqua ea aliquip pariatur id esse. Cillum aliqua
-            commodo et enim. Ut elit irure ad ex exercitation nulla proident
-            Lorem ea Lorem consectetur irure est adipisicing. Ipsum sint nulla
-            laboris aliquip non voluptate aliqua irure laborum. Laboris aliquip
-            proident occaecat quis dolor nulla reprehenderit minim dolor laborum
-            occaecat nulla sint exercitation.
+          <p className="circle-description">
+            <ul>
+              <li>Designed digital graphic about the products for advertisement.</li>
+              <li>Wrote digital content for brand promotion and marketing.</li>
+            </ul>
           </p>
         </div>
-        <div className="WorkBox">
-          <h2 className="BoxCircleTitle">Salesperson in 2020</h2>
+        <div className="work-box">
+          <h2 className="circle-title">Salesperson, 2020</h2>
           <br />
-          <p className="BoxCircleP">
-            Commodo elit commodo sint consectetur enim cillum elit est fugiat
-            Nostrud eiusmod aliqua ea aliquip pariatur id esse. Cillum aliqua
-            commodo et enim. Ut elit irure ad ex exercitation nulla proident
-            Lorem ea Lorem consectetur irure est adipisicing. Ipsum sint nulla
-            laboris aliquip non voluptate aliqua irure laborum. Laboris aliquip
-            proident occaecat quis dolor nulla reprehenderit minim dolor laborum
-            occaecat nulla sint exercitation.
+          <p className="circle-description">
+            <ul>
+              <li>Recommended the best match product to the client.</li>
+              <li>Closed a sale, and convinced new lead.</li>
+            </ul>
           </p>
         </div>
+
       </div>
-      <hr className="CloseLine" />
+
+      <hr className="close-line" />
     </div>
   );
 }
