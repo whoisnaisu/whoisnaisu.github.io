@@ -171,7 +171,9 @@
     display: none;
   }
 
-  .nav-button {
+  .project-button,
+  .work-button,
+  .stack-button {
     display: none;
   }
 
@@ -181,12 +183,12 @@
 
   .greetings {
     margin-top: 2rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   .introduction {
-    font-size: 1.5rem;
-    padding: 2rem;
+    font-size: 1.1rem;
+    padding: 2rem 3rem 5rem 3rem;
   }
 
   .main-right-side {

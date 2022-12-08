@@ -60,6 +60,10 @@
     align-items: center;
   }
 
+  .title {
+    font-size: 2rem;
+  }
+
   .stack-box {
     display: flex;
     flex-direction: column;
