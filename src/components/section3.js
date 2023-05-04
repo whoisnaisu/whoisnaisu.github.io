@@ -1,10 +1,10 @@
-import "./section3.css";
-import html from "../resume-pic/html-1.svg";
-import css from "../resume-pic/css-3.svg";
-import javascript from "../resume-pic/logo-javascript.svg";
-import git from "../resume-pic/git-icon.svg";
-import mongodb from "../resume-pic/mongodb-icon-1.svg";
-import postgresql from "../resume-pic/postgresql.svg";
+import "../assets/css/section3.css";
+import html from "../assets/images/html-1.svg";
+import css from "../assets/images/css-3.svg";
+import javascript from "../assets/images/logo-javascript.svg";
+import git from "../assets/images/git-icon.svg";
+import mongodb from "../assets/images/mongodb-icon-1.svg";
+import postgresql from "../assets/images/postgresql.svg";
 
 function FooterSection() {
   return (

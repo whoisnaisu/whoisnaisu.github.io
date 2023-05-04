@@ -1,8 +1,8 @@
-import "./section1.css";
-
-import github from "../resume-pic/GitHub-Mark.png";
-import gmail from "../resume-pic/gmail.png";
-import phone from "../resume-pic/phone.jpg";
+import "../assets/css/section1.css";
+import github from "../assets/images/GitHub-Mark.png";
+import gmail from "../assets/images/gmail.png";
+import phone from "../assets/images/phone.jpg";
+import linkedin from "../assets/images/linkedin.png";
 
 function HeaderSection() {
   return (
@@ -31,13 +31,11 @@ function HeaderSection() {
             " It's okay to start again from ZERO, <br />
             array index starts from ZERO, too."
           </h1>
-          <p className="capsule-tag">ENTRY-LEVEL SOFTWARE DEVELOPER</p>
+          <p className="capsule-tag">FULL-STACK DEVELOPER</p>
         </div>
         <div className="main-right-side">
           <h1 className="greetings">
-            Greetings !
-            <br />
-            I'm Napas Kumpunya (Naisu)
+            Greetings ! I'm Naisu
           </h1>
           <br />
           <p className="introduction">
@@ -45,24 +43,24 @@ function HeaderSection() {
             <a href="https://www.techupth.com/">
               <strong>Tech Up</strong>
             </a>
-            . I'm looking for an opportunity to work as a developer in the near future!
-            Hope you having fun along with my new lifelong journey!
+            . This is my first static website developed with React. which, I believe, will no longer be updated for a while due to my responsibility for full-time job.
+            If you need to get in touch, please don't hesitate to reach me through LinkedIn.
           </p>
           <br />
           <div className="icon-group">
-            <a href="https://github.com/whoisnaisu">
+            <a href="https://github.com/whoisnaisu" target="_blank" rel="noopener noreferrer" >
               <div className="github-icon">
-                <img src={github} width="50rem" alt="git hub icon" />
+                <img src={github} width="50rem" alt="github icon" />
               </div>
             </a>
-            <a href="mailto: napas14204@gmail.com">
+            <a href="mailto: napas14204@gmail.com" target="_blank" rel="noopener noreferrer">
               <div className="gmail-icon">
                 <img src={gmail} width="50rem" alt="mail icon" />
               </div>
             </a>
-            <a href="tel:+0804467024">
+            <a href="https://www.linkedin.com/in/napas-k/" target="_blank" rel="noopener noreferrer">
               <div className="phone-icon">
-                <img src={phone} width="50rem" alt="phon icon" />
+                <img src={linkedin} width="50rem" alt="linkedin icon" />
               </div>
             </a>
           </div>
