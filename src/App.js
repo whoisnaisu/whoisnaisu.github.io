@@ -1,4 +1,4 @@
-import "./App.css";
+import "./assets/css/App.css"
 import HeaderSection from "./components/section1";
 import DetailSection from "./components/section2";
 import FooterSection from "./components/section3";

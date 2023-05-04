@@ -1,4 +1,4 @@
-import "./section2.css";
+import "../assets/css/section2.css";
 
 
 function DetailSection() {
@@ -14,7 +14,7 @@ function DetailSection() {
       </div>
       <p className="description">You can click on the project title to see a repository.</p>
       <div className="projects-area">
-        <div className="project-box">
+        {/* <div className="project-box">
           <h2 className="circle-title" onClick={() => { openLink("https://github.com/whoisnaisu/find-a-book") }}>
             Find a Book
           </h2>
@@ -22,15 +22,19 @@ function DetailSection() {
           <p className="circle-description">
             Simple book search engine with google API using <strong>React</strong>.
           </p>
-        </div>
-        <div className="project-box">
-          <h2 className="circle-title" onClick={() => { openLink("https://github.com/techupth/home-service") }}>
+        </div> */}
+        <div className="project-box" onClick={() => { openLink("https://github.com/techupth/home-service") }}>
+          <h2 className="circle-title" >
             Home Service
           </h2>
           <br />
           <p className="circle-description">
             Collaborating on a group project with the <strong>Agile Scrum method</strong>, mainly
             responsible for front-end development using <strong>React</strong> and Chakra UI.
+          </p>
+          <br />
+          <p className="circle-description">
+            Stacks: HTML CSS JavsScript React ChakraUI Express.js PostgreSQL
           </p>
         </div>
         {/* <div className="project-box">

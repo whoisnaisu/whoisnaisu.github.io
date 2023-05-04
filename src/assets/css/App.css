@@ -13,7 +13,7 @@ html {
   scroll-behavior: smooth;
 }
 .App {
-  background-image: url("./oooscillate.svg");
+  background-image: url("../images/oooscillate.svg");
   height: 100%;
   width: 100%;
   display: flex;
@@ -37,6 +37,6 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url("./oooscillate.svg");
+    background-image: url("../images/oooscillate.svg");
   }
 }
