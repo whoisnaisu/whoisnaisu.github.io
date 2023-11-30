@@ -5,17 +5,19 @@
   width: 100%;
   height: fit-content;
   margin-top: 4em;
+  padding: 0 1rem;
 }
 
 .title {
-  font-family: "DM Serif Display", serif;
-  font-size: 3em;
+  font-size: 3rem;
   display: flex;
   justify-content: center;
   margin: 1.5rem 1rem 0.5rem 1rem;
+  font-weight: 700;
 }
 
 .description {
+  font-size: 1rem;
   margin-bottom: 3rem;
 }
 
@@ -27,23 +29,29 @@
   margin-bottom: 1rem;
 }
 
-.project-box {
+.card {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start !important;
   align-items: center;
-  border: solid 1px;
-  border-radius: 100%;
-  width: 25rem;
-  height: 25rem;
-  padding: 12% 3rem 3rem 3rem;
+  border-radius: 1rem;
+  max-width: 25rem;
+  min-height: 28rem;
+  height: fit-content;
+  padding: 2rem;
   margin: 1rem;
   text-align: center;
-  background-color: rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0.599);
+  border: none;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
 }
 
-.circle-title {
-  font-family: "DM Serif Display", serif;
+.card:hover {
+  scale: 105%;
+  background-color: white;
+}
+
+.card-title {
   font-size: 1.5rem;
   cursor: pointer;
 }
@@ -58,34 +66,10 @@
 
 .work-area {
   display: flex;
+  max-width: 100%;
   flex-direction: row;
   justify-content: space-evenly;
   margin-bottom: 5%;
-}
-
-.work-box {
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  align-items: center;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
-  border-radius: 100%;
-  width: 30rem;
-  height: 30rem;
-  padding: 10% 3rem 3rem 3rem;
-  margin: 1rem;
-  text-align: center;
-  background-color: white;
-}
-
-.work-box:hover {
-  scale: 102%;
-  transition: 0.6s;
-}
-
-.project-box:hover {
-  scale: 105%;
-  transition: 0.6s;
 }
 
 @media only screen and (max-width: 828px) {
@@ -108,6 +92,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+<<<<<<< HEAD:src/components/section2.css
   }
 
   .project-box,
@@ -116,9 +101,11 @@
     width: 22rem;
     height: 22rem;
     padding: 2rem;
+=======
+>>>>>>> dev:src/assets/css/ExperienceSection.css
   }
 
-  .circle-title {
+  .card-title {
     font-size: 1.2rem;
     width: 80%;
   }
