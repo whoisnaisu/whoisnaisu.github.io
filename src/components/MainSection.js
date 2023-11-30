@@ -1,9 +1,12 @@
 import "../assets/css/MainSection.css";
+import Lottie from "lottie-react";
+import reveal from "../assets/images/lottie/reveal-loading.json"
 import github from "../assets/images/GitHub-Mark.png";
 import gmail from "../assets/images/gmail.png";
 import linkedin from "../assets/images/linkedin.png";
 
 function HeaderSection() {
+
   return (
     <header className="container-1">
       <nav className="nav-bar">
@@ -29,6 +32,9 @@ function HeaderSection() {
           </h1>
           <p className="capsule-tag">NAISU</p>
         </div>
+        <div className="reveal-lottie">
+          <Lottie animationData={reveal} loop={true} />
+        </div>
         <div className="main-right-side">
           <h1 className="greetings">
             Greetings ! I'm Naisu
@@ -45,24 +51,23 @@ function HeaderSection() {
           <br />
           <div className="icon-group">
             <a href="https://github.com/whoisnaisu" target="_blank" rel="noopener noreferrer" >
-              <div className="github-icon">
+              <div className="contact-icon">
                 <img src={github} width="50rem" alt="github icon" />
               </div>
             </a>
             <a href="mailto: napas14204@gmail.com" target="_blank" rel="noopener noreferrer">
-              <div className="gmail-icon">
+              <div className="contact-icon">
                 <img src={gmail} width="50rem" alt="mail icon" />
               </div>
             </a>
             <a href="https://www.linkedin.com/in/napas-k/" target="_blank" rel="noopener noreferrer">
-              <div className="phone-icon">
+              <div className="contact-icon">
                 <img src={linkedin} width="50rem" alt="linkedin icon" />
               </div>
             </a>
           </div>
         </div>
       </div>
-      <hr className="close-line" />
     </header>
   );
 }

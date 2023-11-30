@@ -55,7 +55,6 @@ function DetailSection() {
           )
         })}
       </div>
-      <hr className="close-line" />
     </div>
   );
 }

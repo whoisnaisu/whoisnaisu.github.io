@@ -11,7 +11,9 @@
   display: flex;
   align-items: center;
   margin: 2rem;
-  background-color: rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0.599);
+  border: none;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 .nav-item {
@@ -55,18 +57,28 @@
   position: relative;
 }
 
+.reveal-lottie {
+  position: absolute;
+  opacity: 0.5;
+  top: -15%;
+  left: -15%;
+  z-index: 1;
+}
+
 .capsule-box {
   width: 18.5em;
-  height: 26em;
-  background-color: rgb(255, 255, 255);
-  border: solid 1px;
-  border-radius: 10rem;
-  padding-bottom: 1rem;
+  height: fit-content;
+  background-color: rgba(255, 255, 255, 0.599);
+  border: none;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 9rem;
+  padding: 3rem 0 3rem 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-left: 5rem;
+  z-index: 5;
 }
 
 .capsule-box:hover {
@@ -82,12 +94,13 @@
 }
 
 .capsule-tag {
-  background-color: #efdce7;
+  background-color: #baa8e0;
   border-radius: 10rem;
   margin-top: 1rem;
   padding: 1rem;
   font-size: 0.7rem;
   font-weight: 800;
+  color: white;
 }
 
 .greetings {
@@ -99,6 +112,7 @@
   width: 37%;
   margin-right: 7em;
   font-size: 1.3em;
+  z-index: 2;
 }
 
 .icon-group {
@@ -107,36 +121,33 @@
   display: flex;
 }
 
-.github-icon,
-.gmail-icon,
-.phone-icon {
+.contact-icon {
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: rgb(255, 255, 255);
-  border: solid 1px;
-  border-radius: 10rem;
-  height: 4rem;
-  width: 4rem;
+  border: none;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 100%;
+  height: 5rem;
+  width: 5rem;
+  object-fit: cover;
   padding: 2.5rem;
 }
 
-.github-icon {
+.contact-icon {
   animation: jello 2s ease-out 3s 1 normal backwards;
 }
 
-.gmail-icon {
-  animation: jello 2s ease-out 3.5s 1 normal backwards;
-}
-
-.phone-icon {
-  animation: jello 2s ease-out 4s 1 normal backwards;
-}
-
-.github-icon:hover,
-.gmail-icon:hover,
-.phone-icon:hover {
+.contact-icon:hover {
   scale: 110%;
+}
+
+@media only screen and (max-width: 500px) {
+  .reveal-lottie {
+    left: -90%;
+    opacity: 0.5;
+  }
 }
 
 @media only screen and (max-width: 828px) {
@@ -183,11 +194,7 @@
   }
 
   .left-side-nav {
-    font-size: 1.5rem;
-  }
-
-  .logo-icon {
-    scale: 100%;
+    font-size: 1rem;
   }
 }
 
