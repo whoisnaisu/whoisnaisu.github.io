@@ -92,17 +92,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-<<<<<<< HEAD:src/components/section2.css
-  }
-
-  .project-box,
-  .work-box {
-    justify-content: center;
-    width: 22rem;
-    height: 22rem;
-    padding: 2rem;
-=======
->>>>>>> dev:src/assets/css/ExperienceSection.css
   }
 
   .card-title {
