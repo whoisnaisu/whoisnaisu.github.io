@@ -19,44 +19,30 @@
   flex-direction: row;
 }
 
-.project-button,
-.work-button,
-.stack-button {
+.a-button {
   border: none;
   padding: 1.5rem;
-  font-family: "Philosopher", sans-serif;
   font-size: 1.3rem;
   font-weight: 600;
-}
-
-.project-button {
-  animation: drop 2s ease-out 0s 1 normal backwards;
-}
-.work-button {
-  animation: drop 2s ease-out 0.1s 1 normal backwards;
-}
-
-.stack-button {
   animation: drop 2s ease-out 0.2s 1 normal backwards;
+  text-decoration: none;
 }
 
-.project-button:hover,
-.work-button:hover {
+.a-button:hover {
   color: rgb(205, 157, 165);
-  transition: 0.6s;
 }
 
 .left-side-nav {
-  font-family: "DM Serif Display";
-  font-size: 2rem;
+  font-size: 1.2rem;
   margin-left: 1.5rem;
+  font-weight: 800;
 }
 
 .right-side-nav {
   padding: 10px;
   margin-right: 1rem;
   font-weight: 800;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 .main {
@@ -85,11 +71,9 @@
 
 .capsule-box:hover {
   scale: 105%;
-  transition: 0.6s;
 }
 
 .capsule-quote {
-  font-family: "DM Serif Display", serif;
   font-size: 1.6em;
   padding-top: 0.5rem;
   text-align: center;
@@ -102,13 +86,11 @@
   border-radius: 10rem;
   margin-top: 1rem;
   padding: 1rem;
-  font-family: "Raleway", sans-serif;
   font-size: 0.7rem;
   font-weight: 800;
 }
 
 .greetings {
-  font-family: "Philosopher", sans-serif;
   font-weight: 800;
   font-size: 2.1em;
 }
@@ -155,7 +137,6 @@
 .gmail-icon:hover,
 .phone-icon:hover {
   scale: 110%;
-  transition: 0.6s;
 }
 
 @media only screen and (max-width: 828px) {
@@ -171,7 +152,7 @@
     display: none;
   }
 
-  .nav-button {
+  .a-button {
     display: none;
   }
 
@@ -181,12 +162,12 @@
 
   .greetings {
     margin-top: 2rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   .introduction {
-    font-size: 1.5rem;
-    padding: 2rem;
+    font-size: 1.1rem;
+    padding: 2rem 3rem 5rem 3rem;
   }
 
   .main-right-side {

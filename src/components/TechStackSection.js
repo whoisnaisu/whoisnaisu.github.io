@@ -1,12 +1,19 @@
-import "../assets/css/section3.css";
+import React from "react";
+import "../assets/css/TechStackSection.css";
 import html from "../assets/images/html-1.svg";
 import css from "../assets/images/css-3.svg";
 import javascript from "../assets/images/logo-javascript.svg";
 import git from "../assets/images/git-icon.svg";
 import mongodb from "../assets/images/mongodb-icon-1.svg";
 import postgresql from "../assets/images/postgresql.svg";
+import typescript from "../assets/images/Typescript_logo_2020.svg";
+import react from "../assets/images/React-icon.svg";
+import vue from "../assets/images/Vue.js_Logo_2.svg";
 
 function FooterSection() {
+  const summary = `Hardworking and passionate developer with strong organizational skills, eager to grow as a developer. Ready to help team achieve company goals and write more maintainable code.`;
+
+
   return (
     <div className="container-3">
       <div id="stack-info" className="title">
@@ -17,6 +24,9 @@ function FooterSection() {
           <img src={html} className="icon" alt="html" />
           <img src={css} className="icon" alt="css" />
           <img src={javascript} className="icon" alt="javascript" />
+          <img src={typescript} className="icon" alt="typescript" />
+          <img src={react} className="icon" alt="react" />
+          <img src={vue} className="icon" alt="vue" />
           <img src={git} className="icon" alt="git" />
           <img src={mongodb} className="icon" alt="mongodb" />
           <img src={postgresql} className="icon" alt="postgresql" />
@@ -26,9 +36,7 @@ function FooterSection() {
         <div className="summary-context">
           <div className="title">SUMMARY</div>
           <p>
-            Intuitive problem-solver, familiar with Full-Stack JavaScript. Looking to start the
-            career as an entry-level software developer. Motivated to advance and
-            expand my skill set through targeted mentorship and challenging projects
+            {summary}
           </p>
         </div>
       </div>

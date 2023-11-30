@@ -1,37 +1,33 @@
-import "../assets/css/section1.css";
+import "../assets/css/MainSection.css";
 import github from "../assets/images/GitHub-Mark.png";
 import gmail from "../assets/images/gmail.png";
-import phone from "../assets/images/phone.jpg";
 import linkedin from "../assets/images/linkedin.png";
 
 function HeaderSection() {
   return (
     <header className="container-1">
       <nav className="nav-bar">
-        <div className="left-side-nav">NAISU</div>
+        <div className="left-side-nav">SOFTWARE DEVELOPER</div>
         <div className="nav-item">
-          <a href="#project-info" className="project-button">
+          <a href="#project-info" className="a-button" >
             PROJECTS
           </a>
-          <a href="#work-info" className="work-button">
+          <a href="#work-info" className="a-button" >
             WORK EXPERIENCE
           </a>
-          <a href="#stack-info" className="stack-button">
+          <a href="#work-info" className="a-button" >
             STACKS
           </a>
         </div>
         <div className="right-side-nav">Resume</div>
       </nav>
       <div className="main">
-
-
-
         <div className="capsule-box">
           <h1 className="capsule-quote">
             " It's okay to start again from ZERO, <br />
             array index starts from ZERO, too."
           </h1>
-          <p className="capsule-tag">FULL-STACK DEVELOPER</p>
+          <p className="capsule-tag">NAISU</p>
         </div>
         <div className="main-right-side">
           <h1 className="greetings">
