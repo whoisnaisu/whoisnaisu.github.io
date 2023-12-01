@@ -18,6 +18,12 @@ const data = [
         description: "Simple pacman game with JavaScript and HTML5 Canvas.",
         link: "https://github.com/whoisnaisu/pacman-game",
     },
+     {
+        id: 4,
+        title: "Automatically download",
+        description: "Automatically download helps STOU students download ebook pictures with ease. (CLI based)",
+        link: "https://github.com/whoisnaisu/crispy-carnival",
+    },
 ]
 
 export default data;
