@@ -1,5 +1,4 @@
 import React from "react";
-import "../assets/css/TechStackSection.css";
 import html from "../assets/images/html-1.svg";
 import css from "../assets/images/css-3.svg";
 import javascript from "../assets/images/logo-javascript.svg";

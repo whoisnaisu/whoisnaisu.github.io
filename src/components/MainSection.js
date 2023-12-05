@@ -1,4 +1,3 @@
-import "../assets/css/MainSection.css";
 import Lottie from "lottie-react";
 import reveal from "../assets/images/lottie/reveal-loading.json"
 import github from "../assets/images/GitHub-Mark.png";

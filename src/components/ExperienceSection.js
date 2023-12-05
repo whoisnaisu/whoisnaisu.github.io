@@ -1,4 +1,3 @@
-import "../assets/css/ExperienceSection.css";
 import projectData from "../constants/projects-data";
 import workExperience from "../constants/work-experience-data";
 
