@@ -1,7 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.4abe4efb.css",
-    "main.js": "/static/js/main.60357cd1.js",
+    "main.css": "/static/css/main.ec833abd.css",
+    "main.js": "/static/js/main.9d446e1e.js",
+    "static/js/787.04c09b15.chunk.js": "/static/js/787.04c09b15.chunk.js",
     "static/media/linkedin.png": "/static/media/linkedin.ffe9ad9e36324ff19f7b.png",
     "static/media/gmail.png": "/static/media/gmail.59258387efd765ddf597.png",
     "static/media/postgresql.svg": "/static/media/postgresql.ae92b576b8ea41666538c0756df27969.svg",
@@ -14,11 +15,12 @@
     "static/media/html-1.svg": "/static/media/html-1.f318c8b1d5945fa9adc827ae94849cb1.svg",
     "static/media/Vue.js_Logo_2.svg": "/static/media/Vue.js_Logo_2.5dbb5590e89aba651db8315e1fcc21ff.svg",
     "static/media/React-icon.svg": "/static/media/React-icon.3a03708e42481565259f85329d20b695.svg",
-    "main.4abe4efb.css.map": "/static/css/main.4abe4efb.css.map",
-    "main.60357cd1.js.map": "/static/js/main.60357cd1.js.map"
+    "main.ec833abd.css.map": "/static/css/main.ec833abd.css.map",
+    "main.9d446e1e.js.map": "/static/js/main.9d446e1e.js.map",
+    "787.04c09b15.chunk.js.map": "/static/js/787.04c09b15.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4abe4efb.css",
-    "static/js/main.60357cd1.js"
+    "static/css/main.ec833abd.css",
+    "static/js/main.9d446e1e.js"
   ]
 }
