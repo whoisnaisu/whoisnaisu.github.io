@@ -17,7 +17,7 @@ function HeaderSection() {
           <a href="#work-info" className="a-button" >
             WORK EXPERIENCE
           </a>
-          <a href="#work-info" className="a-button" >
+          <a href="#stack-info" className="a-button" >
             STACKS
           </a>
         </div>
