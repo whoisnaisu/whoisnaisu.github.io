@@ -12,7 +12,6 @@ import vue from "../assets/images/Vue.js_Logo_2.svg";
 function FooterSection() {
   const summary = `Hardworking and passionate developer with strong organizational skills, eager to grow as a developer. Ready to help team achieve company goals and write more maintainable code.`;
 
-
   return (
     <div className="container-3">
       <div id="stack-info" className="title">
@@ -34,9 +33,7 @@ function FooterSection() {
       <div className="summary-section">
         <div className="summary-context">
           <div className="title">SUMMARY</div>
-          <p>
-            {summary}
-          </p>
+          <p>{summary}</p>
         </div>
       </div>
     </div>
