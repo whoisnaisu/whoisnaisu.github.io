@@ -30,6 +30,16 @@ a {
   color: black;
 }
 
+.pointer {
+  cursor: pointer;
+}
+
+.scaling {
+  &:hover {
+    transform: scale(108%);
+  }
+}
+
 @media only screen and (max-width: 828px) {
   .app {
     width: 100%;
