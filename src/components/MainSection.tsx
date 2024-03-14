@@ -1,11 +1,18 @@
-import React from "react";
-import Lottie from "lottie-react";
-import reveal from "../assets/images/lottie/reveal-loading.json";
-import github from "../assets/images/GitHub-Mark.png";
-import gmail from "../assets/images/gmail.png";
-import linkedin from "../assets/images/linkedin.png";
+import React from "react"
+import Lottie from "lottie-react"
+import reveal from "../assets/images/lottie/reveal-loading.json"
+import github from "../assets/images/GitHub-Mark.png"
+import gmail from "../assets/images/gmail.png"
+import linkedin from "../assets/images/linkedin.png"
 
 function HeaderSection() {
+  const handleDownload = () => {
+    const link = document.createElement("a")
+    link.href = "/src/assets/pdf/napas-resume-2024-03.pdf"
+    link.download = "napas-resume-2024-03.pdf"
+    link.click()
+  }
+
   return (
     <header className="container-1">
       <nav className="nav-bar">
@@ -21,7 +28,12 @@ function HeaderSection() {
             STACKS
           </a>
         </div>
-        <div className="right-side-nav">Resume</div>
+        <div
+          onClick={handleDownload}
+          className="right-side-nav pointer scaling"
+        >
+          Download Resume
+        </div>
       </nav>
       <div className="main">
         <div className="capsule-box">
@@ -80,7 +92,7 @@ function HeaderSection() {
         </div>
       </div>
     </header>
-  );
+  )
 }
 
-export default HeaderSection;
+export default HeaderSection

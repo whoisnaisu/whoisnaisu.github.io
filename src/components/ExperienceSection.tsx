@@ -1,11 +1,11 @@
-import React from "react";
-import projectData from "../constants/projects-data";
-import workExperience from "../constants/work-experience-data";
+import React from "react"
+import projectData from "../constants/projects-data"
+import workExperience from "../constants/work-experience-data"
 
 const DetailSection: React.FC = () => {
   const openLink = (link: string) => {
-    window.open(link);
-  };
+    window.open(link)
+  }
 
   return (
     <div className="container-2">
@@ -16,13 +16,13 @@ const DetailSection: React.FC = () => {
         You can click on the project title to see a repository.
       </p>
       <div className="projects-area">
-        {projectData.map((item) => {
+        {projectData.map((item, index) => {
           return (
-            <div className="card">
+            <div className="card" key={index}>
               <h2
                 className="card-title"
                 onClick={() => {
-                  openLink(item.link);
+                  openLink(item.link)
                 }}
               >
                 {item.title}
@@ -30,7 +30,7 @@ const DetailSection: React.FC = () => {
               <br />
               <p className="circle-description">{item.description}</p>
             </div>
-          );
+          )
         })}
       </div>
 
@@ -41,25 +41,25 @@ const DetailSection: React.FC = () => {
         Previous work experience && my responsible for the roles.
       </p>
       <div className="work-area">
-        {workExperience.map((item) => {
+        {workExperience.map((item, index) => {
           return (
-            <div className="card">
+            <div className="card" key={index}>
               <h2 className="card-title">{item.title}</h2>
               <div>{item.date}</div>
               <br />
-              <p className="circle-description">
+              <div className="circle-description">
                 <ul>
                   {item.description.map((list, index) => {
-                    return <li>{list}</li>;
+                    return <li key={index}>{list}</li>
                   })}
                 </ul>
-              </p>
+              </div>
             </div>
-          );
+          )
         })}
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default DetailSection;
+export default DetailSection
