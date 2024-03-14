@@ -1,16 +1,17 @@
-import React from "react";
-import html from "../assets/images/html-1.svg";
-import css from "../assets/images/css-3.svg";
-import javascript from "../assets/images/logo-javascript.svg";
-import git from "../assets/images/git-icon.svg";
-import mongodb from "../assets/images/mongodb-icon-1.svg";
-import postgresql from "../assets/images/postgresql.svg";
-import typescript from "../assets/images/Typescript_logo_2020.svg";
-import react from "../assets/images/React-icon.svg";
-import vue from "../assets/images/Vue.js_Logo_2.svg";
+import React from "react"
+import html from "../assets/images/html-1.svg"
+import css from "../assets/images/css-3.svg"
+import javascript from "../assets/images/logo-javascript.svg"
+import git from "../assets/images/git-icon.svg"
+import mongodb from "../assets/images/mongodb-icon-1.svg"
+import postgresql from "../assets/images/postgresql.svg"
+import typescript from "../assets/images/Typescript_logo_2020.svg"
+import react from "../assets/images/React-icon.svg"
+import vue from "../assets/images/Vue.js_Logo_2.svg"
 
 function FooterSection() {
-  const summary = `Hardworking and passionate developer with strong organizational skills, eager to grow as a developer. Ready to help team achieve company goals and write more maintainable code.`;
+  const summary = `Developer with one year of hands-on experience and strong organizational skills. Dedicated to grow as a skillful developer, ready to support the team in reaching company goals, and improve
+  code maintainability. Always open to learn new skills and frameworks.`
 
   return (
     <div className="container-3">
@@ -37,7 +38,7 @@ function FooterSection() {
         </div>
       </div>
     </div>
-  );
+  )
 }
 
-export default FooterSection;
+export default FooterSection
