@@ -1,10 +1,19 @@
-import React from "react"
+import React, { MouseEventHandler } from "react"
 import Lottie from "lottie-react"
 import reveal from "../assets/images/lottie/reveal-loading.json"
 import github from "../assets/images/GitHub-Mark.png"
 import gmail from "../assets/images/gmail.png"
 import linkedin from "../assets/images/linkedin.png"
 import fileArrowUp from "../assets/images/file-arrow-up-alt-svgrepo-com.svg"
+
+const ggdriveResume =
+  "https://drive.google.com/drive/folders/101SJMjiATx8oTmW5nV47NSMvtylLj-m3?usp=sharing"
+
+const openLink: React.MouseEventHandler<HTMLDivElement> = (event) => {
+  event.preventDefault()
+  console.log("click")
+  window.open(ggdriveResume, "_blank")
+}
 
 function HeaderSection() {
   return (
@@ -22,20 +31,14 @@ function HeaderSection() {
             STACKS
           </a>
         </div>
-        <a
-          className="no-underline"
-          href="https://drive.google.com/drive/folders/101SJMjiATx8oTmW5nV47NSMvtylLj-m3?usp=sharing"
-          target="_blank"
-        >
-          <div className="right-side-nav pointer scaling ">
-            <div>Resume</div>
-            <img
-              className="download-icon"
-              src={fileArrowUp}
-              alt="download icon"
-            />
-          </div>
-        </a>
+        <div className="right-side-nav pointer scaling " onClick={openLink}>
+          <div>Resume</div>
+          <img
+            className="download-icon"
+            src={fileArrowUp}
+            alt="download icon"
+          />
+        </div>
       </nav>
       <div className="main">
         <div className="capsule-box">
