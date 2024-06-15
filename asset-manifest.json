@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.80c7cc1d.css",
+    "main.js": "/static/js/main.ae465ae0.js",
+    "static/js/787.04c09b15.chunk.js": "/static/js/787.04c09b15.chunk.js",
+    "static/media/linkedin.png": "/static/media/linkedin.ffe9ad9e36324ff19f7b.png",
+    "static/media/gmail.png": "/static/media/gmail.59258387efd765ddf597.png",
+    "static/media/postgresql.svg": "/static/media/postgresql.ae92b576b8ea41666538c0756df27969.svg",
+    "static/media/Typescript_logo_2020.svg": "/static/media/Typescript_logo_2020.9ad81d2e09b9cd2265cdb1e55d83a709.svg",
+    "static/media/mongodb-icon-1.svg": "/static/media/mongodb-icon-1.1aca075d5cce0819fea7ea0902d94ce4.svg",
+    "static/media/logo-javascript.svg": "/static/media/logo-javascript.00f3e5cf8bcf4ae623b3835ca5791b15.svg",
+    "static/media/git-icon.svg": "/static/media/git-icon.c60b7e5ae8ec2562f23fdddcab300026.svg",
+    "static/media/download-svgrepo-com.svg": "/static/media/download-svgrepo-com.4a11b21d226a51809bb1405c934b4ed9.svg",
+    "static/media/css-3.svg": "/static/media/css-3.4e47c3122b8d2476a02f97dcfcb28640.svg",
+    "index.html": "/index.html",
+    "static/media/html-1.svg": "/static/media/html-1.f318c8b1d5945fa9adc827ae94849cb1.svg",
+    "static/media/Vue.js_Logo_2.svg": "/static/media/Vue.js_Logo_2.5dbb5590e89aba651db8315e1fcc21ff.svg",
+    "static/media/React-icon.svg": "/static/media/React-icon.3a03708e42481565259f85329d20b695.svg",
+    "main.80c7cc1d.css.map": "/static/css/main.80c7cc1d.css.map",
+    "main.ae465ae0.js.map": "/static/js/main.ae465ae0.js.map",
+    "787.04c09b15.chunk.js.map": "/static/js/787.04c09b15.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.80c7cc1d.css",
+    "static/js/main.ae465ae0.js"
+  ]
+}
