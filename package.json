@@ -1,6 +1,6 @@
 {
   "name": "whoisnaisu",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "private": true,
   "hompage": "https://whoisnaisu.github.io",
   "dependencies": {
@@ -40,7 +40,6 @@
     ]
   },
   "devDependencies": {
-    "@types/file-saver": "^2.0.7",
     "gh-pages": "^4.0.0",
     "sass": "^1.69.5"
   }

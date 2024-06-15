@@ -76,7 +76,8 @@
 @media only screen and (max-width: 828px) {
 
   .card {
-    max-width: 90%;
+    width: 90% !important;
+    max-width: 90% !important;
     min-height: fit-content;
   }
 
@@ -91,6 +92,7 @@
   }
 
   .description {
+    text-align: center;
     font-size: 0.8rem;
   }
 
