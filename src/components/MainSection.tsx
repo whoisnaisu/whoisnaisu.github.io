@@ -4,6 +4,7 @@ import reveal from "../assets/images/lottie/reveal-loading.json"
 import github from "../assets/images/GitHub-Mark.png"
 import gmail from "../assets/images/gmail.png"
 import linkedin from "../assets/images/linkedin.png"
+import downloadIcon from "../assets/images/download-svgrepo-com.svg"
 
 function HeaderSection() {
   const handleDownload = () => {
@@ -30,9 +31,14 @@ function HeaderSection() {
         </div>
         <div
           onClick={handleDownload}
-          className="right-side-nav pointer scaling"
+          className="right-side-nav pointer scaling "
         >
-          Download Resume
+          <div>Resume</div>
+          <img
+            className="download-icon"
+            src={downloadIcon}
+            alt="download icon"
+          />
         </div>
       </nav>
       <div className="main">
@@ -50,14 +56,11 @@ function HeaderSection() {
           <h1 className="greetings">Greetings ! I'm Naisu</h1>
           <br />
           <p className="introduction">
-            I graduated from full-stack developer bootcamp at{" "}
-            <a href="https://www.techupth.com/">
-              <strong>Tech Up</strong>
-            </a>
-            . This is my first static website developed with React. which, I
-            believe, will no longer be updated for a while due to my
-            responsibility for full-time job. If you need to get in touch,
-            please don't hesitate to reach me through LinkedIn.
+            Balancing dual roles, I'm a full-time software developer and a
+            university student. This is my first static website developed with
+            TypeScript, React and SCSS. While my job and homeworks keeps me
+            busy, I'm always eager to connect and collaborate. Let's link up on
+            LinkedIn!
           </p>
           <br />
           <div className="icon-group">

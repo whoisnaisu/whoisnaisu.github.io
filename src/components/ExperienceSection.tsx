@@ -38,7 +38,7 @@ const DetailSection: React.FC = () => {
         WORK EXPERIENCE
       </div>
       <p className="description">
-        Previous work experience && my responsible for the roles.
+        Previous coding related work experience && my responsible for the roles.
       </p>
       <div className="work-area">
         {workExperience.map((item, index) => {
@@ -49,7 +49,7 @@ const DetailSection: React.FC = () => {
               <br />
               <div className="circle-description">
                 <ul>
-                  {item.description.map((list, index) => {
+                  {item?.description?.map((list, index) => {
                     return <li key={index}>{list}</li>
                   })}
                 </ul>

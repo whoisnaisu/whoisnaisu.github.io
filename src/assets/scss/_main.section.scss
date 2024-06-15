@@ -45,6 +45,8 @@
   margin-right: 1rem;
   font-weight: 800;
   font-size: 1.2rem;
+  display: flex;
+  align-items: center;
 }
 
 .main {
@@ -57,6 +59,11 @@
   position: relative;
 }
 
+.download-icon {
+  margin-left: 0.8rem;
+  max-width: 1.8rem;
+}
+
 .reveal-lottie {
   position: absolute;
   opacity: 0.5;
@@ -66,6 +73,7 @@
 }
 
 .capsule-box {
+  font-family: "Source Code Pro", monospace !important;
   width: 18.5em;
   height: fit-content;
   background-color: rgba(255, 255, 255, 0.599);
@@ -135,12 +143,12 @@
   padding: 2.5rem;
 }
 
-.contact-icon {
-  animation: jello 2s ease-out 3s 1 normal backwards;
-}
+// .contact-icon {
+//   animation: jello 2s ease-out 3s 1 normal backwards;
+// }
 
 .contact-icon:hover {
-  scale: 110%;
+  scale: 108%;
 }
 
 @media only screen and (max-width: 500px) {
@@ -177,6 +185,7 @@
   }
 
   .introduction {
+    font-family: "Noto Sans", sans-serif !important;
     font-size: 1.1rem;
     padding: 2rem 3rem 5rem 3rem;
   }
