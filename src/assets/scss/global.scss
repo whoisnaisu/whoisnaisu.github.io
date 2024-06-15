@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
 @import "main.section";
 @import "experience.section";
 @import "tech.stack.section";
@@ -8,8 +11,8 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: "Source Code Pro", monospace;
   transition: 0.3s;
+  color: #343e42 !important;
 }
 
 html {
@@ -17,6 +20,7 @@ html {
 }
 
 .app {
+  font-family: "Noto Sans", sans-serif !important;
   height: 100%;
   width: 100%;
   display: flex;
@@ -26,9 +30,6 @@ html {
   overflow-x: hidden;
 }
 
-a {
-  color: black;
-}
 
 .pointer {
   cursor: pointer;
@@ -63,13 +64,12 @@ body {
   background: linear-gradient(45deg,
       #ffffff 10%,
       #ebd1d8 29%,
-      #bbb0e7 25%,
+      #ccc3ee 25%,
       #ffffff 100%);
   background-size: 200%;
   -webkit-animation: Gradient 15s ease infinite;
   -moz-animation: Gradient 15s ease infinite;
   animation: Gradient 15s ease infinite;
-  // min-height: calc(100vh - 2rem);
   display: flex;
   flex-direction: column;
   align-items: stretch;
@@ -95,9 +95,6 @@ body::after {
 }
 
 body::after {
-  // width: 150vmin;
-  // height: 150vmin;
-  // left: auto;
   top: auto;
   bottom: 0;
   animation: morph 10s linear infinite alternate,
