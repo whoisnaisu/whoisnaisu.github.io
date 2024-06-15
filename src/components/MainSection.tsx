@@ -4,16 +4,9 @@ import reveal from "../assets/images/lottie/reveal-loading.json"
 import github from "../assets/images/GitHub-Mark.png"
 import gmail from "../assets/images/gmail.png"
 import linkedin from "../assets/images/linkedin.png"
-import downloadIcon from "../assets/images/download-svgrepo-com.svg"
+import fileArrowUp from "../assets/images/file-arrow-up-alt-svgrepo-com.svg"
 
 function HeaderSection() {
-  const handleDownload = () => {
-    const link = document.createElement("a")
-    link.href = "/src/assets/pdf/napas-resume-2024-03.pdf"
-    link.download = "napas-resume-2024-03.pdf"
-    link.click()
-  }
-
   return (
     <header className="container-1">
       <nav className="nav-bar">
@@ -29,17 +22,20 @@ function HeaderSection() {
             STACKS
           </a>
         </div>
-        <div
-          onClick={handleDownload}
-          className="right-side-nav pointer scaling "
+        <a
+          className="no-underline"
+          href="https://drive.google.com/drive/folders/101SJMjiATx8oTmW5nV47NSMvtylLj-m3?usp=sharing"
+          target="_blank"
         >
-          <div>Resume</div>
-          <img
-            className="download-icon"
-            src={downloadIcon}
-            alt="download icon"
-          />
-        </div>
+          <div className="right-side-nav pointer scaling ">
+            <div>Resume</div>
+            <img
+              className="download-icon"
+              src={fileArrowUp}
+              alt="download icon"
+            />
+          </div>
+        </a>
       </nav>
       <div className="main">
         <div className="capsule-box">
