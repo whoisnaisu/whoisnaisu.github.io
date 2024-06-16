@@ -5,7 +5,6 @@
   width: 100%;
   height: fit-content;
   margin-top: 4em;
-  padding: 0 1rem;
 }
 
 .title {
@@ -23,14 +22,13 @@
 
 .projects-area,
 .work-area {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+  width: fit-content;
   height: fit-content;
   margin-bottom: 1rem;
-  flex-wrap: wrap;
-  max-width: 100%;
-
 }
 
 .work-area {
@@ -42,12 +40,11 @@
   flex-direction: column;
   justify-content: flex-start !important;
   align-items: center;
-  border-radius: 1rem;
+  border-radius: 20px;
   width: 25rem;
-  max-width: 25rem;
-  min-height: 30rem;
-  height: fit-content;
-  padding: 2rem;
+  height: 30rem;
+  // min-height: fit-content;
+  padding: 2rem 1rem;
   margin: 1rem;
   text-align: center;
   background-color: rgba(255, 255, 255, 0.599);
@@ -56,7 +53,7 @@
 }
 
 .card:hover {
-  scale: 105%;
+  scale: 102%;
   background-color: white;
 }
 
@@ -65,12 +62,134 @@
   cursor: pointer;
 }
 
-.circle-description {
+.card-description {
   text-align: left;
   line-height: 1.6rem;
   font-size: 0.9rem;
-  width: 87%;
-  margin-left: 1.5rem;
+  width: 89%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 1rem;
+
+  li {
+    margin: 0 0 0 1rem;
+  }
+}
+
+.stack-container {
+  display: flex;
+  max-width: 100%;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-top: 1rem;
+
+  .stack-tag {
+    font-family: "Source Code Pro", monospace !important;
+    font-size: 0.8rem;
+    padding: 2px 15px;
+    border: 1px solid;
+    border-radius: 12px;
+    font-weight: 700;
+  }
+
+  .vue {
+    background-color: #42b883;
+    border: #35495e 1px solid;
+    color: #35495e !important;
+  }
+
+  .typescript {
+    background-color: #3178c6;
+    border: #3178c6 1px solid;
+    color: white !important;
+  }
+
+  .scss {
+    background-color: #CD6799;
+    border: #CD6799 1px solid;
+    color: white !important;
+  }
+
+  .javascript {
+    background-color: #F6DE1E;
+    border: #F6DE1E 1px solid;
+    color: rgb(32, 32, 32) !important;
+  }
+
+  .html {
+    background-color: #F06528;
+    border: #E54F27 1px solid;
+    color: white !important;
+  }
+
+  .css {
+    background-color: #0190D5;
+    border: #1572B6 1px solid;
+    color: white !important;
+  }
+
+  .reactjs {
+    background-color: #2D2D2C;
+    border: #60DBFA 1px solid;
+    color: #60DBFA !important;
+  }
+
+  .postgresql {
+    background-color: #2F6792;
+    border: #2F6792 1px solid;
+    color: white !important;
+  }
+
+  .nuxt {
+    background-color: #00DD83;
+    color: #35495F !important;
+    border: #35495F 1px solid;
+  }
+
+  .expressjs {
+    background-color: #232322;
+    color: #F6DE1E !important;
+    border: #F6DE1E 1px solid;
+  }
+
+  .nodejs {
+    background-color: #87BF00;
+    color: #3E3E34 !important;
+    border: #3E3E34 1px solid;
+  }
+
+  .chakraui {
+    background-color: #28B8AD;
+    border: #28B8AD 1px solid;
+    color: white !important;
+  }
+
+  .csharp {
+    background-color: #2D016F;
+    border: #2D016F 1px solid;
+    color: white !important;
+  }
+
+  .aspnetcore {
+    background-color: #5C2992;
+    border: #6C419D 1px solid;
+    color: white !important;
+
+  }
+
+  .mongodb {
+    background-color: #66AD3A;
+    border: #3E3F3C 1px solid;
+    color: #3E3F3C !important;
+  }
+
+  .git {
+    background-color: #F15133;
+    border: #F15133 1px solid;
+    color: white !important;
+  }
 }
 
 
@@ -79,9 +198,9 @@
 
   .card {
     width: 90% !important;
-    max-width: 90% !important;
-    min-height: fit-content;
+    height: fit-content;
   }
+
 
   .container-2 {
     height: 100%;
@@ -96,12 +215,13 @@
   .description {
     text-align: center;
     font-size: 0.8rem;
+    padding: 0 2rem;
   }
 
   .projects-area,
   .work-area {
+    display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
   }
 
@@ -110,7 +230,7 @@
     width: 80%;
   }
 
-  .circle-description {
+  .card-description {
     width: 80%;
     font-size: 0.8rem;
   }
