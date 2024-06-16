@@ -35,8 +35,10 @@
 }
 
 .left-side-nav {
+  display: flex;
+  align-items: center;
   font-size: 1.2rem;
-  margin-left: 1.5rem;
+  margin-left: 1rem;
   font-weight: 800;
 }
 
@@ -196,9 +198,6 @@
     text-align: center;
   }
 
-  .left-side-nav {
-    font-size: 0.9rem;
-  }
 }
 
 @keyframes jello {
