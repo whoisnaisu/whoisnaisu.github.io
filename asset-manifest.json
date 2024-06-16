@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.36c89509.css",
-    "main.js": "/static/js/main.efd07b21.js",
+    "main.css": "/static/css/main.c36e2846.css",
+    "main.js": "/static/js/main.3e49c112.js",
     "static/js/787.04c09b15.chunk.js": "/static/js/787.04c09b15.chunk.js",
     "static/media/linkedin.png": "/static/media/linkedin.ffe9ad9e36324ff19f7b.png",
     "static/media/gmail.png": "/static/media/gmail.59258387efd765ddf597.png",
@@ -9,19 +9,20 @@
     "static/media/Typescript_logo_2020.svg": "/static/media/Typescript_logo_2020.9ad81d2e09b9cd2265cdb1e55d83a709.svg",
     "static/media/mongodb-icon-1.svg": "/static/media/mongodb-icon-1.1aca075d5cce0819fea7ea0902d94ce4.svg",
     "static/media/logo-javascript.svg": "/static/media/logo-javascript.00f3e5cf8bcf4ae623b3835ca5791b15.svg",
+    "static/media/sparkles-svgrepo-com.svg": "/static/media/sparkles-svgrepo-com.97f627a498781a0d5fb7ba04fb4e48b0.svg",
     "static/media/git-icon.svg": "/static/media/git-icon.c60b7e5ae8ec2562f23fdddcab300026.svg",
-    "static/media/file-arrow-up-alt-svgrepo-com.svg": "/static/media/file-arrow-up-alt-svgrepo-com.69d6de35abfa472abd120e4d41012ae0.svg",
+    "static/media/file-arrow-up-alt-svgrepo-com.svg": "/static/media/file-arrow-up-alt-svgrepo-com.964690fe368a38b9751ae5ea9a83d355.svg",
     "static/media/css-3.svg": "/static/media/css-3.4e47c3122b8d2476a02f97dcfcb28640.svg",
     "index.html": "/index.html",
     "static/media/html-1.svg": "/static/media/html-1.f318c8b1d5945fa9adc827ae94849cb1.svg",
-    "static/media/Vue.js_Logo_2.svg": "/static/media/Vue.js_Logo_2.f1fd23be1db9361fbcd81511fe862b08.svg",
-    "static/media/React-icon.svg": "/static/media/React-icon.928f956d9c8ebcffb98a8e917154a81a.svg",
-    "main.36c89509.css.map": "/static/css/main.36c89509.css.map",
-    "main.efd07b21.js.map": "/static/js/main.efd07b21.js.map",
+    "static/media/Vue.js_Logo_2.svg": "/static/media/Vue.js_Logo_2.5dbb5590e89aba651db8315e1fcc21ff.svg",
+    "static/media/React-icon.svg": "/static/media/React-icon.3a03708e42481565259f85329d20b695.svg",
+    "main.c36e2846.css.map": "/static/css/main.c36e2846.css.map",
+    "main.3e49c112.js.map": "/static/js/main.3e49c112.js.map",
     "787.04c09b15.chunk.js.map": "/static/js/787.04c09b15.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.36c89509.css",
-    "static/js/main.efd07b21.js"
+    "static/css/main.c36e2846.css",
+    "static/js/main.3e49c112.js"
   ]
 }
