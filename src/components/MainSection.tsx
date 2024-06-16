@@ -1,25 +1,23 @@
-import React, { MouseEventHandler } from "react"
+import React from "react"
 import Lottie from "lottie-react"
 import reveal from "../assets/images/lottie/reveal-loading.json"
 import github from "../assets/images/GitHub-Mark.png"
 import gmail from "../assets/images/gmail.png"
 import linkedin from "../assets/images/linkedin.png"
 import fileArrowUp from "../assets/images/file-arrow-up-alt-svgrepo-com.svg"
+import sparkle from "../assets/images/sparkles-svgrepo-com.svg"
+import openLink from "../utils/openLink"
 
 const ggdriveResume =
   "https://drive.google.com/drive/folders/101SJMjiATx8oTmW5nV47NSMvtylLj-m3?usp=sharing"
-
-const openLink: React.MouseEventHandler<HTMLDivElement> = (event) => {
-  event.preventDefault()
-  console.log("click")
-  window.open(ggdriveResume, "_blank")
-}
 
 function HeaderSection() {
   return (
     <header className="container-1">
       <nav className="nav-bar">
-        <div className="left-side-nav">SOFTWARE DEVELOPER</div>
+        <div className="left-side-nav">
+          <img className="nav-bar-icon" src={sparkle} alt="sparkle icon" />
+        </div>
         <div className="nav-item">
           <a href="#project-info" className="a-button">
             PROJECTS
@@ -31,20 +29,19 @@ function HeaderSection() {
             STACKS
           </a>
         </div>
-        <div className="right-side-nav pointer scaling " onClick={openLink}>
+        <div
+          className="right-side-nav pointer scaling "
+          onClick={() => openLink(ggdriveResume)}
+        >
           <div>Resume</div>
-          <img
-            className="download-icon"
-            src={fileArrowUp}
-            alt="download icon"
-          />
+          <img className="nav-bar-icon" src={fileArrowUp} alt="download icon" />
         </div>
       </nav>
       <div className="main">
         <div className="capsule-box">
           <h1 className="capsule-quote">
             " It's okay to start again from ZERO, <br />
-            array index starts from ZERO, too."
+            array index starts from ZERO, too. "
           </h1>
           <p className="capsule-tag">NAISU</p>
         </div>

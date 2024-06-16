@@ -27,16 +27,18 @@
   font-size: 1.3rem;
   font-weight: 600;
   text-decoration: none;
+  z-index: 3;
 }
 
 .a-button:hover {
-  color: rgb(154, 123, 204);
-  transform: scale(110%);
+  transform: scale(105%);
 }
 
 .left-side-nav {
+  display: flex;
+  align-items: center;
   font-size: 1.2rem;
-  margin-left: 1.5rem;
+  margin-left: 1rem;
   font-weight: 800;
 }
 
@@ -60,7 +62,7 @@
   position: relative;
 }
 
-.download-icon {
+.nav-bar-icon {
   margin-left: 0.5rem;
   max-width: 1.8rem;
 }
@@ -160,18 +162,10 @@
 }
 
 @media only screen and (max-width: 828px) {
-  .capsule-box {
-    display: none;
-  }
 
-  .capsule-quote {
-    display: none;
-  }
-
-  .capsule-tag {
-    display: none;
-  }
-
+  .capsule-box,
+  .capsule-quote,
+  .capsule-tag,
   .a-button {
     display: none;
   }
@@ -196,16 +190,14 @@
     width: 90%;
     margin-right: 0;
     margin-bottom: 10%;
-    font-size: 1.3rem;
+    font-size: 1rem;
   }
 
   .right-side-nav {
     font-size: 1rem;
+    text-align: center;
   }
 
-  .left-side-nav {
-    font-size: 0.9rem;
-  }
 }
 
 @keyframes jello {
