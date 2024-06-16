@@ -21,12 +21,20 @@
   margin-bottom: 3rem;
 }
 
-.projects-area {
+.projects-area,
+.work-area {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   height: fit-content;
   margin-bottom: 1rem;
+  flex-wrap: wrap;
+  max-width: 100%;
+
+}
+
+.work-area {
+  margin-bottom: 5%;
 }
 
 .card {
@@ -65,13 +73,7 @@
   margin-left: 1.5rem;
 }
 
-.work-area {
-  display: flex;
-  max-width: 100%;
-  flex-direction: row;
-  justify-content: space-evenly;
-  margin-bottom: 5%;
-}
+
 
 @media only screen and (max-width: 828px) {
 

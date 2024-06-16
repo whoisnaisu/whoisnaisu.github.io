@@ -24,7 +24,7 @@ const data = [
       "Assisted in troubleshooting and problem-solving for coding challenges.",
       "Collaborated with instructors to ensure student success in coding tasks."
     ],
-    date: "Aug 2023 - Oct 2023"
+    date: "Aug 2023 - Oct 2023 & Dec 2023 - Feb 2024"
   }
 ]
 
