@@ -5,8 +5,13 @@ const data: Array<IWorkData> = [
     id: 1,
     title: "Software Developer",
     date: "May 2024 - Present",
-    description: ["Still a secrets ;)", "Mainly using C# ASP .Net Core"],
-    stack: ["C#", "ASP .NET Core"]
+    description: [
+      "Developed, tested, and maintained FinTech software applications, managing both front-end and back-end functionalities using JavaScript, J-Query, C#, ASP .NET MVC, Razor and Microsoft SQL Server.",
+      "Collaborated with the QA team to ensure the software passed all tests.",
+      "Presented demos to customers, showing software features.",
+      "Reviewed code, debugged software problems, and corrected issues."
+    ],
+    stack: ["React.js", "TypeScript", "SCSS", "C#", "ASP .NET Core"]
   },
   {
     id: 2,
