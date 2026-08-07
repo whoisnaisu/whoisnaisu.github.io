@@ -1,27 +1,20 @@
-import React, { useEffect, useState } from "react"
+import { useEffect } from "react"
+import { useLocation } from "react-router-dom"
 
-const PageTitleChanger: React.FC = () => {
-  const [originalTitle, setOriginalTitle] = useState<string>(document.title)
+const titles: Record<string, string> = {
+  "/": "Naisu — Software Developer",
+  "/projects": "Projects — Naisu",
+  "/experience": "Experience — Naisu",
+}
+
+function PageTitleChanger() {
+  const location = useLocation()
 
   useEffect(() => {
-    const handleBlur = () => {
-      document.title = "WHO IS NAISU?"
-    }
+    document.title = titles[location.pathname] ?? titles["/"]
+  }, [location.pathname])
 
-    const handleFocus = () => {
-      document.title = originalTitle
-    }
-
-    window.addEventListener("blur", handleBlur)
-    window.addEventListener("focus", handleFocus)
-
-    return () => {
-      window.removeEventListener("blur", handleBlur)
-      window.removeEventListener("focus", handleFocus)
-    }
-  }, [originalTitle])
-
-  return ""
+  return null
 }
 
 export default PageTitleChanger

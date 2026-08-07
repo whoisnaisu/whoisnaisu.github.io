@@ -1,237 +1,483 @@
-.container-2 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  height: fit-content;
-  margin-top: 4em;
+.page-shell {
+  width: min(100% - 3rem, 74rem);
+  margin: 0 auto;
+  padding: clamp(4rem, 8vw, 7rem) 0;
 }
 
-.title {
-  font-size: 3rem;
-  display: flex;
-  justify-content: center;
-  margin: 1.5rem 1rem 0.5rem 1rem;
-  font-weight: 700;
+.page-heading {
+  max-width: 52rem;
+  margin-bottom: clamp(3rem, 6vw, 5rem);
 }
 
-.description {
-  font-size: 1rem;
-  margin-bottom: 3rem;
-}
-
-.projects-area,
-.work-area {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
-  grid-auto-rows: minmax(100px, auto);
-  width: fit-content;
-  height: fit-content;
-  margin-bottom: 1rem;
-}
-
-.work-area {
-  margin-bottom: 5%;
-}
-
-.card {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start !important;
-  align-items: center;
-  border-radius: 20px;
-  width: 25rem;
-  height: 30rem;
-  // min-height: fit-content;
-  padding: 2rem 1rem;
-  margin: 1rem;
-  text-align: center;
-  background-color: rgba(255, 255, 255, 0.599);
-  border: none;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
-}
-
-.card:hover {
-  scale: 102%;
-  background-color: white;
-}
-
-.card-title {
-  font-size: 1.5rem;
-  cursor: pointer;
-}
-
-.card-description {
-  text-align: left;
-  line-height: 1.6rem;
-  font-size: 0.9rem;
-  width: 89%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin: 0 1rem;
-
-  li {
-    margin: 0 0 0 1rem;
-  }
-}
-
-.stack-container {
-  display: flex;
-  max-width: 100%;
-  flex-wrap: wrap;
-  gap: 0.8rem;
+.page-heading h1 {
+  max-width: 15ch;
   margin-top: 1rem;
+  font-size: clamp(2.5rem, 5vw, 4.8rem);
+  font-weight: 700;
+  letter-spacing: -0.05em;
+  line-height: 1.04;
+}
 
-  .stack-tag {
-    font-family: "Source Code Pro", monospace !important;
-    font-size: 0.8rem;
-    padding: 2px 15px;
-    border: 1px solid;
-    border-radius: 12px;
-    font-weight: 700;
-  }
+.page-heading > p:last-child {
+  max-width: 42rem;
+  margin-top: 1.5rem;
+  color: var(--muted);
+  font-size: 1.05rem;
+  line-height: 1.75;
+}
 
-  .vue {
-    background-color: #42b883;
-    border: #35495e 1px solid;
-    color: #35495e !important;
-  }
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
 
-  .typescript {
-    background-color: #3178c6;
-    border: #3178c6 1px solid;
-    color: white !important;
-  }
+.project-card {
+  min-height: 22rem;
+  padding: clamp(1.5rem, 3vw, 2.25rem);
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  background-color: var(--surface);
+  transition: transform 0.25s, border-color 0.25s, background-color 0.25s;
+}
 
-  .scss {
-    background-color: #CD6799;
-    border: #CD6799 1px solid;
-    color: white !important;
-  }
+.project-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(105, 87, 213, 0.28);
+  background-color: var(--surface-strong);
+}
 
-  .javascript {
-    background-color: #F6DE1E;
-    border: #F6DE1E 1px solid;
-    color: rgb(32, 32, 32) !important;
-  }
+.project-card.featured {
+  grid-column: 1 / -1;
+  min-height: 24rem;
+  background:
+    linear-gradient(125deg, rgba(105, 87, 213, 0.1), transparent 55%),
+    var(--surface);
+}
 
-  .html {
-    background-color: #F06528;
-    border: #E54F27 1px solid;
-    color: white !important;
-  }
+.card-meta {
+  display: flex;
+  justify-content: space-between;
+  color: var(--muted);
+  font-family: "Source Code Pro", monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+}
 
-  .css {
-    background-color: #0190D5;
-    border: #1572B6 1px solid;
-    color: white !important;
-  }
+.project-card h2 {
+  margin-top: auto;
+  font-size: clamp(1.6rem, 3vw, 2.35rem);
+  letter-spacing: -0.035em;
+}
 
-  .reactjs {
-    background-color: #2D2D2C;
-    border: #60DBFA 1px solid;
-    color: #60DBFA !important;
-  }
+.project-card h2 a {
+  text-decoration: none;
+}
 
-  .postgresql {
-    background-color: #2F6792;
-    border: #2F6792 1px solid;
-    color: white !important;
-  }
+.project-card h2 span {
+  color: var(--accent);
+  font-size: 0.8em;
+}
 
-  .nuxt {
-    background-color: #00DD83;
-    color: #35495F !important;
-    border: #35495F 1px solid;
-  }
+.project-card > p {
+  max-width: 44rem;
+  margin-top: 1rem;
+  color: var(--muted);
+  line-height: 1.7;
+}
 
-  .expressjs {
-    background-color: #232322;
-    color: #F6DE1E !important;
-    border: #F6DE1E 1px solid;
-  }
+.experience-list {
+  overflow: clip;
+}
 
-  .nodejs {
-    background-color: #87BF00;
-    color: #3E3E34 !important;
-    border: #3E3E34 1px solid;
-  }
+.experience-item {
+  --timeline-gap: clamp(1.5rem, 4vw, 3.5rem);
+  padding: clamp(2rem, 5vw, 4rem) 0;
+  display: grid;
+  grid-template-columns: minmax(13rem, 0.65fr) 2rem minmax(0, 1.35fr);
+  gap: var(--timeline-gap);
+}
 
-  .chakraui {
-    background-color: #28B8AD;
-    border: #28B8AD 1px solid;
-    color: white !important;
-  }
+.experience-heading,
+.experience-content {
+  opacity: 0;
+  transform: translateY(1.5rem);
+  transition: opacity 0.65s ease, transform 0.65s ease;
+}
 
-  .csharp {
-    background-color: #2D016F;
-    border: #2D016F 1px solid;
-    color: white !important;
-  }
+.experience-content {
+  transition-delay: 0.12s;
+}
 
-  .aspnetcore {
-    background-color: #5C2992;
-    border: #6C419D 1px solid;
-    color: white !important;
-
-  }
-
-  .mongodb {
-    background-color: #66AD3A;
-    border: #3E3F3C 1px solid;
-    color: #3E3F3C !important;
-  }
-
-  .git {
-    background-color: #F15133;
-    border: #F15133 1px solid;
-    color: white !important;
+@media (min-width: 761px) {
+  .experience-heading {
+    position: sticky;
+    top: 7rem;
+    align-self: start;
   }
 }
 
+.experience-item.is-visible .experience-heading,
+.experience-item.is-visible .experience-content {
+  opacity: 1;
+  transform: translateY(0);
+}
 
+.timeline-marker {
+  min-height: 100%;
+  position: relative;
+}
 
-@media only screen and (max-width: 828px) {
+.timeline-marker::before {
+  content: "";
+  width: 1px;
+  position: absolute;
+  top: -4rem;
+  bottom: -4rem;
+  left: 50%;
+  background: linear-gradient(var(--accent), rgba(105, 87, 213, 0.18));
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform 0.9s ease 0.15s;
+}
 
-  .card {
-    width: 90% !important;
-    height: fit-content;
+.experience-item:first-child .timeline-marker::before {
+  top: 0.65rem;
+}
+
+.experience-item:last-child:not(.has-parallel) .timeline-marker::before {
+  bottom: calc(100% - 0.65rem);
+}
+
+.experience-item.has-parallel:last-child .timeline-marker::before {
+  bottom: 2rem;
+}
+
+.experience-item.is-visible .timeline-marker::before {
+  transform: scaleY(1);
+}
+
+.timeline-marker span {
+  width: 0.9rem;
+  height: 0.9rem;
+  position: absolute;
+  top: 0.2rem;
+  left: 50%;
+  z-index: 1;
+  border: 3px solid var(--page);
+  border-radius: 50%;
+  background-color: var(--accent);
+  box-shadow: 0 0 0 1px rgba(105, 87, 213, 0.3);
+  transform: translateX(-50%) scale(0);
+  transition: transform 0.45s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.experience-item.is-visible .timeline-marker span {
+  transform: translateX(-50%) scale(1);
+}
+
+.experience-date {
+  color: var(--accent);
+  font-family: "Source Code Pro", monospace;
+  font-size: 0.72rem;
+  line-height: 1.6;
+}
+
+.experience-heading h2 {
+  margin-top: 0.75rem;
+  font-size: clamp(1.6rem, 3vw, 2.35rem);
+  letter-spacing: -0.035em;
+}
+
+.company-badge {
+  margin-top: 0.85rem;
+  display: inline-flex;
+  padding: 0.35rem 0.65rem;
+  border: 1px solid rgba(105, 87, 213, 0.22);
+  border-radius: 999px;
+  background-color: rgba(105, 87, 213, 0.08);
+  color: var(--accent);
+  font-family: "Source Code Pro", monospace;
+  font-size: 0.68rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.experience-heading .stack-container {
+  max-width: 14rem;
+  margin-top: 1.5rem;
+}
+
+.career-milestone {
+  margin-bottom: 2rem;
+  padding: 1.1rem 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border: 1px solid rgba(105, 87, 213, 0.2);
+  border-radius: var(--radius-sm);
+  background-color: rgba(105, 87, 213, 0.07);
+}
+
+.career-milestone > span {
+  width: 0.7rem;
+  height: 0.7rem;
+  flex: 0 0 auto;
+  border: 2px solid var(--surface-strong);
+  border-radius: 50%;
+  background-color: var(--accent);
+  box-shadow: 0 0 0 1px rgba(105, 87, 213, 0.3);
+}
+
+.career-milestone p {
+  color: var(--accent);
+  font-family: "Source Code Pro", monospace;
+  font-size: 0.68rem;
+}
+
+.career-milestone h3 {
+  margin-top: 0.3rem;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.experience-content ul {
+  display: grid;
+  gap: 0.9rem;
+  color: var(--muted);
+  line-height: 1.7;
+  list-style-position: outside;
+}
+
+.experience-content li {
+  padding-left: 0.35rem;
+}
+
+.role-summary > p:first-child:not(.role-summary-body) {
+  color: var(--accent);
+  font-family: "Source Code Pro", monospace;
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.role-summary-body {
+  margin-top: 0.85rem;
+  color: var(--muted);
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.role-summary-body strong,
+.role-story-body strong,
+.parallel-summary strong {
+  color: var(--ink);
+  font-weight: 700;
+  background: linear-gradient(
+    transparent 68%,
+    rgba(105, 87, 213, 0.18) 68%
+  );
+}
+
+.role-story {
+  position: relative;
+  margin-top: 2.5rem;
+  padding: 0.25rem 0 0.25rem 1.5rem;
+  border-left: 2px solid rgba(105, 87, 213, 0.45);
+}
+
+.role-story::before {
+  content: "";
+  width: calc(var(--timeline-gap) + 1rem);
+  position: absolute;
+  top: 0.65rem;
+  left: calc(-1 * var(--timeline-gap) - 1rem);
+  border-top: 1px solid rgba(105, 87, 213, 0.45);
+}
+
+.role-story::after {
+  content: "";
+  width: 0.55rem;
+  height: 0.55rem;
+  position: absolute;
+  top: 0.38rem;
+  left: -0.34rem;
+  border-radius: 50%;
+  background-color: var(--accent);
+}
+
+.role-story > p:first-child {
+  color: var(--accent);
+  font-family: "Source Code Pro", monospace;
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.role-story-body {
+  max-width: 46rem;
+  margin-top: 0.85rem;
+  color: var(--ink);
+  font-size: clamp(1rem, 1.5vw, 1.15rem);
+  line-height: 1.8;
+}
+
+.role-story .story-stack {
+  margin-top: 1.1rem;
+}
+
+.parallel-role {
+  position: relative;
+  margin-top: 2.5rem;
+  padding: clamp(1.25rem, 3vw, 2rem);
+  border: 1px solid rgba(105, 87, 213, 0.2);
+  border-radius: var(--radius-md);
+  background:
+    linear-gradient(135deg, rgba(105, 87, 213, 0.09), transparent 65%),
+    var(--surface);
+}
+
+.parallel-role::before {
+  content: "";
+  width: calc(var(--timeline-gap) + 1rem);
+  position: absolute;
+  top: 1.75rem;
+  left: calc(-1 * var(--timeline-gap) - 1rem);
+  border-top: 1px dashed rgba(105, 87, 213, 0.55);
+}
+
+.parallel-role::after {
+  content: "";
+  width: 0.55rem;
+  height: 0.55rem;
+  position: absolute;
+  top: 1.48rem;
+  left: -0.3rem;
+  border-radius: 50%;
+  background-color: var(--accent);
+}
+
+.parallel-role-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.parallel-role-header > p {
+  color: var(--muted);
+  font-family: "Source Code Pro", monospace;
+  font-size: 0.68rem;
+  line-height: 1.5;
+  text-align: right;
+}
+
+.parallel-badge {
+  color: var(--accent);
+  font-family: "Source Code Pro", monospace;
+  font-size: 0.66rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.parallel-role h3 {
+  margin: 1.25rem 0 1rem;
+  font-size: clamp(1.35rem, 2.5vw, 1.9rem);
+  letter-spacing: -0.03em;
+}
+
+.parallel-role h3.has-company {
+  margin-bottom: 0.4rem;
+}
+
+.parallel-company {
+  margin-bottom: 1rem;
+  color: var(--accent);
+  font-family: "Source Code Pro", monospace;
+  font-size: 0.72rem;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.parallel-summary {
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.8;
+}
+
+.parallel-role > ul {
+  font-size: 0.9rem;
+}
+
+@media (max-width: 760px) {
+  .page-shell {
+    width: min(100% - 2rem, 42rem);
+    padding: 4rem 0;
   }
 
-
-  .container-2 {
-    height: 100%;
-    margin-top: 6%;
+  .projects-grid {
+    grid-template-columns: 1fr;
   }
 
-  #project-info,
-  #work-info {
-    font-size: 2rem;
+  .project-card.featured {
+    grid-column: auto;
   }
 
-  .description {
-    text-align: center;
-    font-size: 0.8rem;
-    padding: 0 2rem;
+  .project-card,
+  .project-card.featured {
+    min-height: 20rem;
   }
 
-  .projects-area,
-  .work-area {
-    display: flex;
+  .experience-item {
+    --timeline-gap: 1.25rem;
+    grid-template-columns: 1.25rem minmax(0, 1fr);
+    grid-template-rows: auto auto;
+    column-gap: 1.25rem;
+    row-gap: 1.25rem;
+  }
+
+  .timeline-marker {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+  }
+
+  .experience-heading,
+  .experience-content {
+    grid-column: 2;
+  }
+
+  .parallel-role-header {
+    align-items: flex-start;
     flex-direction: column;
-    align-items: center;
   }
 
-  .card-title {
-    font-size: 1.2rem;
-    width: 80%;
+  .parallel-role-header > p {
+    text-align: left;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .experience-heading,
+  .experience-content {
+    opacity: 1;
+    transform: none;
+    transition: none;
   }
 
-  .card-description {
-    width: 80%;
-    font-size: 0.8rem;
+  .timeline-marker::before {
+    transform: scaleY(1);
+    transition: none;
+  }
+
+  .timeline-marker span,
+  .experience-item.is-visible .timeline-marker span {
+    transform: translateX(-50%) scale(1);
+    transition: none;
   }
 }

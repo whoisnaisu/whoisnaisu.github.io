@@ -1,0 +1,128 @@
+.stack-container {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.stack-tag {
+  padding: 0.35rem 0.65rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background-color: rgba(255, 255, 255, 0.55);
+  color: var(--muted);
+  font-family: "Source Code Pro", monospace;
+  font-size: 0.68rem;
+  font-weight: 500;
+}
+
+.stack-tag.reactjs {
+  border-color: #61dafb;
+  background-color: #20232a;
+  color: #61dafb;
+}
+
+.stack-tag.typescript {
+  border-color: #3178c6;
+  background-color: #3178c6;
+  color: white;
+}
+
+.stack-tag.scss {
+  border-color: #cc6699;
+  background-color: #cc6699;
+  color: white;
+}
+
+.stack-tag.csharp,
+.stack-tag.aspnetmvc {
+  border-color: #512bd4;
+  background-color: #512bd4;
+  color: white;
+}
+
+.stack-tag.aspnetcore {
+  border-color: #7028e4;
+  background-color: #7028e4;
+  color: white;
+}
+
+.stack-tag.nuxt {
+  border-color: #00dc82;
+  background-color: #00dc82;
+  color: #003f2d;
+}
+
+.stack-tag.vue {
+  border-color: #42b883;
+  background-color: #42b883;
+  color: #173d32;
+}
+
+.stack-tag.mongodb {
+  border-color: #00684a;
+  background-color: #00684a;
+  color: white;
+}
+
+.stack-tag.postgresql,
+.stack-tag.sql,
+.stack-tag.jquery {
+  border-color: #336791;
+  background-color: #336791;
+  color: white;
+}
+
+.stack-tag.nodejs {
+  border-color: #339933;
+  background-color: #339933;
+  color: white;
+}
+
+.stack-tag.expressjs {
+  border-color: #303030;
+  background-color: #303030;
+  color: white;
+}
+
+.stack-tag.chakraui {
+  border-color: #319795;
+  background-color: #319795;
+  color: white;
+}
+
+.stack-tag.nunit {
+  border-color: #253e85;
+  background-color: #253e85;
+  color: white;
+}
+
+.stack-tag.cli {
+  border-color: #46d369;
+  background-color: #20232a;
+  color: #78e991;
+}
+
+.stack-tag.git {
+  border-color: #f05032;
+  background-color: #f05032;
+  color: white;
+}
+
+.stack-tag.javascript {
+  border-color: #f7df1e;
+  background-color: #f7df1e;
+  color: #20232a;
+}
+
+.stack-tag.html {
+  border-color: #e34f26;
+  background-color: #e34f26;
+  color: white;
+}
+
+.stack-tag.css {
+  border-color: #1572b6;
+  background-color: #1572b6;
+  color: white;
+}

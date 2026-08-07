@@ -1,165 +1,95 @@
-@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Source+Code+Pro:wght@500;600&display=swap");
 
 @import "main.section";
+@import "stack.tags";
 @import "experience.section";
-@import "tech.stack.section";
 
+:root {
+  --ink: #202629;
+  --muted: #687176;
+  --accent: #6957d5;
+  --accent-soft: #ebe8fb;
+  --surface: rgba(255, 255, 255, 0.72);
+  --surface-strong: #ffffff;
+  --line: rgba(32, 38, 41, 0.12);
+  --page: #f5f6f2;
+  --radius-sm: 0.65rem;
+  --radius-md: 1.1rem;
+  --radius-lg: 1.6rem;
+  --shadow: 0 1.5rem 4rem rgba(39, 40, 55, 0.08);
+}
 
 * {
   box-sizing: border-box;
-  padding: 0;
   margin: 0;
-  transition: 0.3s;
-  color: #343e42 !important;
+  padding: 0;
 }
 
 html {
+  overflow-x: clip;
   scroll-behavior: smooth;
 }
 
-.right-side-nav {
-  z-index: 10;
+@media (min-width: 829px) {
+  html.home-route {
+    overflow-y: hidden;
+  }
 }
 
+#root,
 .app {
-  font-family: "Noto Sans", sans-serif !important;
-  height: 100%;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  object-fit: contain;
-  overflow-x: hidden;
-}
-
-
-.pointer {
-  cursor: pointer;
-}
-
-.scaling {
-  &:hover {
-    transform: scale(108%);
-  }
-}
-
-@media only screen and (max-width: 828px) {
-  .app {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+  min-height: 100vh;
+  min-height: 100dvh;
 }
 
 body {
-  background: -moz-linear-gradient(45deg,
-      #ffffff 10%,
-      #ebd1d8 29%,
-      #e7b0d0 50%,
-      #ffffff 100%);
-  background: -webkit-linear-gradient(45deg,
-      #ffffff 10%,
-      #ebd1d8 29%,
-      #cbb0e7 20%,
-      #ffffff 100%);
-  background: linear-gradient(45deg,
-      #ffffff 10%,
-      #ebd1d8 29%,
-      #ccc3ee 25%,
-      #ffffff 100%);
-  background-size: 200%;
-  -webkit-animation: Gradient 15s ease infinite;
-  -moz-animation: Gradient 15s ease infinite;
-  animation: Gradient 15s ease infinite;
+  min-width: 20rem;
+  min-height: 100vh;
+  min-height: 100dvh;
+  overflow-x: hidden;
+  background:
+    radial-gradient(circle at 8% 5%, rgba(105, 87, 213, 0.14), transparent 30rem),
+    radial-gradient(circle at 92% 90%, rgba(219, 164, 184, 0.16), transparent 34rem),
+    var(--page);
+  color: var(--ink);
+  font-family: "Manrope", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+a,
+button {
+  color: inherit;
+  font: inherit;
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid rgba(105, 87, 213, 0.35);
+  outline-offset: 3px;
+}
+
+.app {
+  width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: stretch;
-  justify-content: space-evenly;
-  position: relative;
-  overflow-x: hidden;
-  width: 100%;
 }
 
-body::before,
-body::after {
-  content: "";
-  height: 70vmax;
-  position: absolute;
-  background: rgba(255, 255, 255, 0.07);
-  left: -20vmin;
-  top: -20vmin;
-  animation: morph 15s linear infinite alternate, spin 20s linear infinite;
-  z-index: 1;
-  will-change: border-radius, transform;
-  transform-origin: 55%;
-  pointer-events: none;
+.route-page {
+  min-height: calc(100vh - 4.5rem);
+  min-height: calc(100dvh - 4.5rem);
 }
 
-body::after {
-  top: auto;
-  bottom: 0;
-  animation: morph 10s linear infinite alternate,
-    spin 26s linear infinite reverse;
-  transform-origin: 10%;
+.eyebrow {
+  color: var(--accent);
+  font-family: "Source Code Pro", monospace;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
 }
 
-@-webkit-keyframes Gradient {
-  0% {
-    background-position: 0 50%;
-  }
-
-  50% {
-    background-position: 100% 50%;
-  }
-
-  100% {
-    background-position: 0 50%;
-  }
-}
-
-@-moz-keyframes Gradient {
-  0% {
-    background-position: 0 50%;
-  }
-
-  50% {
-    background-position: 100% 50%;
-  }
-
-  100% {
-    background-position: 0 50%;
-  }
-}
-
-@keyframes Gradient {
-  0% {
-    background-position: 0 50%;
-  }
-
-  50% {
-    background-position: 100% 50%;
-  }
-
-  100% {
-    background-position: 0 50%;
-  }
-}
-
-@keyframes morph {
-  0% {
-    border-radius: 40% 60% 60% 40% / 70% 30% 70% 30%;
-  }
-
-  100% {
-    border-radius: 40% 60%;
-  }
-}
-
-@keyframes spin {
-  to {
-    transform: rotate(1turn);
+@media (max-width: 828px) {
+  .route-page {
+    min-height: calc(100vh - 4rem);
+    min-height: calc(100dvh - 4rem);
   }
 }
