@@ -18,7 +18,7 @@
   line-height: 1.04;
 }
 
-.page-heading > p:last-child {
+.page-heading>p:last-child {
   max-width: 42rem;
   margin-top: 1.5rem;
   color: var(--muted);
@@ -81,7 +81,7 @@
   font-size: 0.8em;
 }
 
-.project-card > p {
+.project-card>p {
   max-width: 44rem;
   margin-top: 1rem;
   color: var(--muted);
@@ -222,7 +222,7 @@
   background-color: rgba(105, 87, 213, 0.07);
 }
 
-.career-milestone > span {
+.career-milestone>span {
   width: 0.7rem;
   height: 0.7rem;
   flex: 0 0 auto;
@@ -256,7 +256,7 @@
   padding-left: 0.35rem;
 }
 
-.role-summary > p:first-child:not(.role-summary-body) {
+.role-summary>p:first-child:not(.role-summary-body) {
   color: var(--accent);
   font-family: "Source Code Pro", monospace;
   font-size: 0.68rem;
@@ -277,10 +277,8 @@
 .parallel-summary strong {
   color: var(--ink);
   font-weight: 700;
-  background: linear-gradient(
-    transparent 68%,
-    rgba(105, 87, 213, 0.18) 68%
-  );
+  background: linear-gradient(transparent 68%,
+      rgba(105, 87, 213, 0.18) 68%);
 }
 
 .role-story {
@@ -310,7 +308,7 @@
   background-color: var(--accent);
 }
 
-.role-story > p:first-child {
+.role-story>p:first-child {
   color: var(--accent);
   font-family: "Source Code Pro", monospace;
   font-size: 0.68rem;
@@ -369,7 +367,7 @@
   gap: 1rem;
 }
 
-.parallel-role-header > p {
+.parallel-role-header>p {
   color: var(--muted);
   font-family: "Source Code Pro", monospace;
   font-size: 0.68rem;
@@ -411,14 +409,14 @@
   line-height: 1.8;
 }
 
-.parallel-role > ul {
+.parallel-role>ul {
   font-size: 0.9rem;
 }
 
 @media (max-width: 760px) {
   .page-shell {
     width: min(100% - 2rem, 42rem);
-    padding: 4rem 0;
+    padding: 5rem 0;
   }
 
   .projects-grid {
@@ -457,12 +455,13 @@
     flex-direction: column;
   }
 
-  .parallel-role-header > p {
+  .parallel-role-header>p {
     text-align: left;
   }
 }
 
 @media (prefers-reduced-motion: reduce) {
+
   .experience-heading,
   .experience-content {
     opacity: 1;

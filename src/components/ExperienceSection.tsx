@@ -126,17 +126,19 @@ export const WorkExperienceSection: React.FC = () => {
   )
 
   useEffect(() => {
-    const timelineItems = timelineRef.current?.querySelectorAll(
-      ".experience-item"
+    const timelineHeadings = timelineRef.current?.querySelectorAll(
+      ".experience-heading"
     )
 
-    if (!timelineItems) return
+    if (!timelineHeadings) return
 
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            entry.target.classList.add("is-visible")
+            entry.target
+              .closest(".experience-item")
+              ?.classList.add("is-visible")
             observer.unobserve(entry.target)
           }
         })
@@ -144,7 +146,7 @@ export const WorkExperienceSection: React.FC = () => {
       { threshold: 0.2, rootMargin: "0px 0px -10% 0px" }
     )
 
-    timelineItems.forEach((item) => observer.observe(item))
+    timelineHeadings.forEach((heading) => observer.observe(heading))
 
     return () => observer.disconnect()
   }, [])

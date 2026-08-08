@@ -385,13 +385,18 @@
 
   .hero {
     width: min(100% - 2rem, 42rem);
-    padding: 4rem 0;
     grid-template-columns: 1fr;
     gap: 2.5rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
   }
 
   .hero-copy h1 {
     font-size: clamp(2.5rem, 12vw, 4rem);
+  }
+
+  .hero-actions {
+    justify-content: center;
   }
 }
 

@@ -22,8 +22,8 @@ function MainSection() {
             collaboration, maintainable code, and reliable delivery.
           </p>
           <div className="hero-actions">
-            <NavLink to="/projects" className="primary-action">
-              View selected work <span aria-hidden="true">→</span>
+            <NavLink to="/experience" className="primary-action">
+              View my experience <span aria-hidden="true">→</span>
             </NavLink>
             <a
               className="secondary-action"
